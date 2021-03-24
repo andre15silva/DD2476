@@ -1,3 +1,0 @@
-reponame
-https://api.github.com/repos/CyC2018/CS-Notes/git/blobs/b2e4603bf0c350b02ef0de4dd87e03821fd87f0b
-https://api.github.com/repos/CyC2018/CS-Notes/git/blobs/1d598bdc92b3609dd2ab75756f74d2ae3bd06989
