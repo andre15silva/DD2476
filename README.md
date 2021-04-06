@@ -3,7 +3,12 @@ This repository is a part of our master's course in Search Engines and Informati
 The search engine uses Elastic Search to index GitHub and allow users to look for algorithms or specific methods (Java only)
 
 # Run instructions
-TODO
+## Scanner
+`python3 scanner/main.py --api-token <github api token> --indexer "java -cp indexer RepoDecoder" --limit 10`
+
+The above assumes that RepoDecoder is compiled with `javac RepoDecoder`.
+
+API tokens for GitHub can be created at [https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 
 # TODOs
 1. Obtain a lot of Java files from Github (using Github API) (https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)

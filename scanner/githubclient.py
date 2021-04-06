@@ -11,8 +11,8 @@ class GithubClient:
         """
         self.authorization_token = authorization_token
 
-    def get_repositories(self):
-        response = self._place_get_api("https://api.github.com/search/repositories?q=algorithms%20language:Java")
+    def get_repositories(self, limit):
+        response = self._place_get_api("https://api.github.com/search/repositories?q=language:Java&sort=stars&order=desc&per_page=" + str(limit))
         if response is None:
             sys.exit("Request error in getting repositories")
         return response
