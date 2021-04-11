@@ -1,10 +1,10 @@
 package se.kth.dd2476;
 
+import okhttp3.*;
 import spoon.Launcher;
-import spoon.reflect.declaration.CtClass;
-import spoon.reflect.declaration.CtMethod;
+import spoon.reflect.declaration.*;
+import spoon.reflect.reference.CtTypeReference;
 
-import javax.security.auth.callback.LanguageCallback;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -107,19 +107,98 @@ public class RepoDecoder implements Iterable<String> {
         Scanner input = new Scanner(System.in);
         var repoDecoder = new RepoDecoder(input);
         for (String code : repoDecoder) {
-            spoonDoesSomething(code);
+            spoonDoesSomething(repoDecoder.name, code);
         }
 
     }
 
-    private static void spoonDoesSomething(String code) {
+    private static void spoonDoesSomething(String repo, String code) {
         CtClass klass = Launcher.parseClass(code);
 
-        // indexClass(klass);
+        //indexClass(klass);
 
         for (Object method : klass.getAllMethods()) {
-            // indexMethod((CtMethod) method);
-            System.out.println((CtMethod) method);
+            indexMethod(repo, (CtMethod) method);
         }
     }
+
+    private static void indexClass(CtClass klass) {
+        // Do something ?
+    }
+
+    private static void indexMethod(String repo, CtMethod method) {
+        // Create base properties body
+        String body = "{\n" +
+                "   \"repository\": \"" + repo + "\",\n" +
+                "   \"fileUrl\": \"" + "url" + "\",\n" +
+                "   \"returnType\": \"" + method.getType().getSimpleName() + "\",\n" +
+                "   \"name\": \"" + method.getSimpleName() + "\",\n" +
+                "   \"file\": \"" + "file" + "\",\n" +
+                //"   \"lineNumber\": " + method.getPosition() + "\",\n";
+                "   \"visibility\": \"" + method.getVisibility() + "\",\n";
+
+        // Create modifiers list
+        body += "   \"modifiers\": [\n";
+        for (ModifierKind modifier : method.getModifiers()) {
+            body += "       \"" + modifier.toString() + "\",\n";
+        }
+        body = body.replaceAll(",\n$", "\n");
+        body += "   ],\n";
+
+        // Create args list
+        body += "   \"arguments\": [\n";
+        for (Object p : method.getParameters()) {
+            CtParameter parameter = (CtParameter) p;
+            body += "       {\n" +
+                    "           \"type\": \"" + parameter.getType() + "\",\n" +
+                    "           \"name\": \"" + parameter.getSimpleName() + "\",\n" +
+                    "       },\n";
+        }
+        body = body.replaceAll(",\n$", "\n");
+        body += "   ],\n";
+
+        // Create thrown types list
+        body += "   \"throws\": [\n";
+        for (Object t : method.getThrownTypes()) {
+            CtTypeReference type = (CtTypeReference) t;
+            body += "       \"" + type.getSimpleName() + "\",\n";
+        }
+        body = body.replaceAll(",\n$", "\n");
+        body += "   ],\n";
+
+        // Create annotations list
+        body += "   \"annotations\": [\n";
+        for (CtAnnotation annotation : method.getAnnotations()) {
+            body += "       \"" + annotation + "\",\n";
+        }
+        body = body.replaceAll(",\n$", "\n");
+        body += "   ]\n";
+
+        body += "}";
+
+        System.out.println(body);
+
+        index("code/method/", body);
+    }
+
+    private static void index(String path, String body) {
+        OkHttpClient client = new OkHttpClient();
+
+        MediaType JSON = MediaType.get("application/json; charset=utf-8");
+        RequestBody requestBody = RequestBody.create(body, JSON);
+
+        Request request = new Request.Builder()
+                .url("http://localhost:9200/" + path)
+                .post(requestBody)
+                .build();
+
+        try {
+            Call call = client.newCall(request);
+            Response response = call.execute();
+            System.out.println(response);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
 }
