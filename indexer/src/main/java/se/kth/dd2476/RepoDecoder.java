@@ -1,13 +1,12 @@
 package se.kth.dd2476;
 
 import okhttp3.*;
+import org.jetbrains.annotations.NotNull;
 import spoon.Launcher;
 import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
@@ -20,7 +19,7 @@ import java.util.Scanner;
  * It reads from the given scanner the github api URLs
  * and provides an iterator for the code that will be extracted.
  */
-public class RepoDecoder implements Iterable<String> {
+public class RepoDecoder implements Iterable<File> {
 
     Scanner scanner;
     boolean scannerIsEmpty = false;
@@ -33,8 +32,9 @@ public class RepoDecoder implements Iterable<String> {
         name = scanner.next();
     }
 
+    @NotNull
     @Override
-    public Iterator<String> iterator() {
+    public Iterator<File> iterator() {
         return new Iterator<>() {
             int index = 0;
 
@@ -50,7 +50,7 @@ public class RepoDecoder implements Iterable<String> {
             }
 
             @Override
-            public String next() {
+            public File next() {
                 if (index < URLs.size())
                     return getDecodedString(URLs.get(index++));
                 index++;
@@ -67,7 +67,7 @@ public class RepoDecoder implements Iterable<String> {
      * @param fileURL a url of a file of the type api.github.com/<user>/<repo>/blob/sha
      * @return A string with the code
      */
-    private String getDecodedString(String fileURL) {
+    private File getDecodedString(String fileURL) {
         try {
             URL url = new URL(fileURL);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
@@ -91,7 +91,16 @@ public class RepoDecoder implements Iterable<String> {
             for (var line : content.split("\\\\n")) {
                 stringBuilder.append(new String(decoder.decode(line)));
             }
-            return stringBuilder.toString();
+            var tmp_filename = "java_reconstructed_file" + ProcessHandle.current().pid() + ".java";
+            File result = new File(tmp_filename);
+            if(result.exists())
+                if(result.delete())
+                    if(!result.createNewFile())
+                        System.err.println("Unable to create temporary file with the java code");
+            var writer = new FileWriter(tmp_filename);
+            writer.write(stringBuilder.toString());
+            writer.close();
+            return result;
         } catch (IOException e) {
             e.printStackTrace();
             return null;
@@ -106,17 +115,17 @@ public class RepoDecoder implements Iterable<String> {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         var repoDecoder = new RepoDecoder(input);
-        for (String code : repoDecoder) {
+        for (File code : repoDecoder) {
             spoonDoesSomething(repoDecoder.name, code);
         }
     }
 
-    private static void spoonDoesSomething(String repo, String code) {
-        CtClass klass = Launcher.parseClass(code);
-
-        for (Object method : klass.getAllMethods()) {
-            indexMethod(repo, (CtMethod) method);
-        }
+    private static void spoonDoesSomething(String repo, File code) {
+//        CtClass klass = Launcher.parseClass(code); //todo: change to parse file
+//
+//        for (Object method : klass.getAllMethods()) {
+//            indexMethod(repo, (CtMethod) method);
+//        }
     }
 
     private static void indexMethod(String repo, CtMethod method) {
