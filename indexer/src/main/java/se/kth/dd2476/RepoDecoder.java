@@ -109,21 +109,14 @@ public class RepoDecoder implements Iterable<String> {
         for (String code : repoDecoder) {
             spoonDoesSomething(repoDecoder.name, code);
         }
-
     }
 
     private static void spoonDoesSomething(String repo, String code) {
         CtClass klass = Launcher.parseClass(code);
 
-        //indexClass(klass);
-
         for (Object method : klass.getAllMethods()) {
             indexMethod(repo, (CtMethod) method);
         }
-    }
-
-    private static void indexClass(CtClass klass) {
-        // Do something ?
     }
 
     private static void indexMethod(String repo, CtMethod method) {
@@ -134,6 +127,7 @@ public class RepoDecoder implements Iterable<String> {
                 "   \"returnType\": \"" + method.getType().getSimpleName() + "\",\n" +
                 "   \"name\": \"" + method.getSimpleName() + "\",\n" +
                 "   \"file\": \"" + "file" + "\",\n" +
+                "   \"javaDoc\": \"" + method.getDocComment() + "\",\n" +
                 //"   \"lineNumber\": " + method.getPosition() + "\",\n";
                 "   \"visibility\": \"" + method.getVisibility() + "\",\n";
 
