@@ -17,14 +17,14 @@ def get_fileurls(githubclient, response2):
     for j in response2:
         if j["type"] == "file":
             if j["name"].endswith(".java"):
-                files.append(j["git_url"])
+                files.append((j["name"], j["git_url"]))
         elif j["type"] == "dir":
             dir_response = githubclient.get_files_recursively(j)
             if dir_response is None:
                 continue
             for k in dir_response["tree"]:
                 if k["type"] == "blob" and k["path"].endswith(".java"):
-                    files.append(k["url"])
+                    files.append((k["path"], k["url"]))
     return files
 
 def print_repoinfo(repository_name,repository_url,files):
@@ -36,8 +36,8 @@ def run_indexer(binary, repository_name, repository_url, url_files):
     pipe = Popen(binary, shell=True, stdin=PIPE)
     pipe.stdin.write((repository_name + "\n").encode('utf-8'))
     pipe.stdin.write(repository_url.encode('utf-8'))
-    for url in url_files:
-        pipe.stdin.write(("\n" + url).encode('utf-8'))
+    for file in url_files:
+        pipe.stdin.write(("\n" + file[0] + " " + file[1]).encode('utf-8'))
     pipe.stdin.close()
 
 
