@@ -110,30 +110,7 @@ function App() {
 
         setHasSearched(true);
 
-        /*elasticSearchRequest("methods/method", "POST", {
-            repository: "CyC2018/CS-Notes",
-            fileUrl: "https://github.com/CyC2018/CS-Notes/blob/master/.gitignore",
-            returnType: "int",
-            name: "testFunc",
-            file: ".gitignore",
-            lineNumber: 2,
-            arguments: [
-                {
-                    type: "bool",
-                    name: "opt1",
-                },
-                {
-                    type: "String",
-                    name: "strval1"
-                }
-            ]
-        }).then((result) => {
-            console.log(result);
-        }, (error) => {
-            console.log(error);
-        });*/
-
-        elasticSearchRequest("methods/_search", "POST", {"query": {
+        elasticSearchRequest("code/method/_search", "POST", {"query": {
                 "query_string": {
                     "query": searchInputValue
                 }
@@ -205,6 +182,11 @@ function App() {
                                           <p>Method name: {method.name}</p>
                                           <p>Return type: {method.returnType}</p>
                                           <p>Arguments: {method.arguments.map(arg => arg.toString()).join(', ')}</p>
+                                          <p>Visibility: {method.visibility}</p>
+                                          <p>Javadoc: {method.javaDoc}</p>
+                                          <p>Modifiers: {method.modifiers.join(', ')}</p>
+                                          <p>Throws: {method.throws.join(', ')}</p>
+                                          <p>Annotations: {method.annotations.join(', ')}</p>
                                           <p>Repository: <a rel="noreferrer" target="_blank" href={"https://github.com/" + method.repository}>{method.repository}</a></p>
                                           <p>File: <a rel="noreferrer" target="_blank" href={method.fileUrl}>{method.file}</a></p>
                                           <p>Line number: <a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>{method.lineNumber}</a></p>

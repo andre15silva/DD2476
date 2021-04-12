@@ -9,6 +9,11 @@ export default class Method {
     this.file = null;
     this.lineNumber = null;
     this.fileUrl = "null";
+    this.visibility = null;
+    this.javaDoc = null;
+    this.modifiers = [];
+    this.throws = [];
+    this.annotations = [];
   }
 
   fromJson(json) {
@@ -18,6 +23,11 @@ export default class Method {
     this.file = json.file;
     this.lineNumber = json.lineNumber;
     this.fileUrl = json.fileUrl;
+    this.visibility = json.visibility;
+    this.javaDoc = json.javaDoc;
+    this.modifiers = json.modifiers;
+    this.throws = json.throws;
+    this.annotations = json.annotations;
 
     if ("arguments" in json) {
       this.arguments = [];
