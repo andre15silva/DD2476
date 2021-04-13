@@ -2,7 +2,6 @@ package se.kth.dd2476;
 
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
-import spoon.Launcher;
 import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
@@ -19,28 +18,45 @@ import java.util.Scanner;
  * It reads from the given scanner the github api URLs
  * and provides an iterator for the code that will be extracted.
  */
-public class RepoDecoder implements Iterable<File> {
+public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
+
+    static class RepoFile{
+        File file; //file with the code
+        String filename; //name of the file
+        String URL; //github proper url
+
+        public RepoFile(File file, String URL) {
+            this.file = file;
+            this.URL = URL;
+            var brokenURL = URL.split("/");
+            filename = brokenURL[brokenURL.length - 1];
+        }
+    }
 
     Scanner scanner;
     boolean scannerIsEmpty = false;
-    String name;
-    ArrayList<String> URLs = new ArrayList<>();
+    String repoName;
+    String repoURL;
+    ArrayList<String> blobURLs = new ArrayList<>();
+    ArrayList<String> properURLs = new ArrayList<>();
 
     public RepoDecoder(Scanner scanner) {
         this.scanner = scanner;
         assert (scanner.hasNext());
-        name = scanner.next();
+        repoName = scanner.next();
+        assert (scanner.hasNext());
+        repoURL = scanner.next();
     }
 
     @NotNull
     @Override
-    public Iterator<File> iterator() {
+    public Iterator<RepoFile> iterator() {
         return new Iterator<>() {
             int index = 0;
 
             @Override
             public boolean hasNext() {
-                if (index < URLs.size())
+                if (index < blobURLs.size())
                     return true;
                 if (!scannerIsEmpty) {
                     scannerIsEmpty = !scanner.hasNext();
@@ -50,13 +66,16 @@ public class RepoDecoder implements Iterable<File> {
             }
 
             @Override
-            public File next() {
-                if (index < URLs.size())
-                    return getDecodedString(URLs.get(index++));
+            public RepoFile next() {
+                if (index < blobURLs.size())
+                    return new RepoFile(getDecodedString(blobURLs.get(index)), properURLs.get(index++));
                 index++;
-                String fileURL = scanner.next();
-                URLs.add(fileURL);
-                return getDecodedString(fileURL);
+                String fileProperURL = scanner.next();
+                assert(scanner.hasNext());
+                String fileBlobURL = scanner.next();
+                properURLs.add(fileProperURL);
+                blobURLs.add(fileBlobURL);
+                return new RepoFile(getDecodedString(fileBlobURL), fileProperURL);
             }
         };
     }
@@ -115,12 +134,12 @@ public class RepoDecoder implements Iterable<File> {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         var repoDecoder = new RepoDecoder(input);
-        for (File code : repoDecoder) {
-            spoonDoesSomething(repoDecoder.name, code);
+        for (var code : repoDecoder) {
+            spoonDoesSomething(repoDecoder.repoName, code);
         }
     }
 
-    private static void spoonDoesSomething(String repo, File code) {
+    private static void spoonDoesSomething(String repo, RepoFile code) {
 //        CtClass klass = Launcher.parseClass(code); //todo: change to parse file
 //
 //        for (Object method : klass.getAllMethods()) {
