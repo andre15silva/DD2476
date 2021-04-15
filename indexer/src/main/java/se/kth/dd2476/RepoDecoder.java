@@ -2,6 +2,8 @@ package se.kth.dd2476;
 
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
+import spoon.Launcher;
+import spoon.reflect.CtModel;
 import spoon.reflect.declaration.*;
 import spoon.reflect.reference.CtTypeReference;
 
@@ -20,7 +22,7 @@ import java.util.Scanner;
  */
 public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
 
-    static class RepoFile{
+    static class RepoFile {
         File file; //file with the code
         String filename; //name of the file
         String URL; //github proper url
@@ -134,29 +136,35 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         var repoDecoder = new RepoDecoder(input);
-        for (var code : repoDecoder) {
-            spoonDoesSomething(repoDecoder.repoName, code);
+        for (var repoFile : repoDecoder) {
+            spoonDoesSomething(repoDecoder.repoName, repoFile);
         }
     }
 
-    private static void spoonDoesSomething(String repo, RepoFile code) {
-//        CtClass klass = Launcher.parseClass(code); //todo: change to parse file
-//
-//        for (Object method : klass.getAllMethods()) {
-//            indexMethod(repo, (CtMethod) method);
-//        }
+    private static void spoonDoesSomething(String repo, RepoFile repoFile) {
+	    Launcher launcher = new Launcher();
+
+	    launcher.addInputResource(repoFile.file.getPath());
+	    launcher.buildModel();
+
+	    CtModel model = launcher.getModel();
+
+	    for (CtType type : model.getAllTypes())
+	        for (Object method : type.getMethods()) {
+	            indexMethod(repo, repoFile, (CtMethod) method);
+            }
     }
 
-    private static void indexMethod(String repo, CtMethod method) {
+    private static void indexMethod(String repo, RepoFile repoFile, CtMethod method) {
         // Create base properties body
         String body = "{\n" +
                 "   \"repository\": \"" + repo + "\",\n" +
-                "   \"fileUrl\": \"" + "url" + "\",\n" +
+                "   \"fileUrl\": \"" + repoFile.URL + "\",\n" +
                 "   \"returnType\": \"" + method.getType().getSimpleName() + "\",\n" +
                 "   \"name\": \"" + method.getSimpleName() + "\",\n" +
-                "   \"file\": \"" + "file" + "\",\n" +
+                "   \"file\": \"" + repoFile.filename + "\",\n" +
                 "   \"javaDoc\": \"" + method.getDocComment() + "\",\n" +
-                //"   \"lineNumber\": " + method.getPosition() + "\",\n";
+                "   \"lineNumber\": " + method.getPosition().getLine() + "\",\n" +
                 "   \"visibility\": \"" + method.getVisibility() + "\",\n";
 
         // Create modifiers list
