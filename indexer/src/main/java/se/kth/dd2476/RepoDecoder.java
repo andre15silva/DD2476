@@ -164,7 +164,7 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
                 "   \"name\": \"" + method.getSimpleName() + "\",\n" +
                 "   \"file\": \"" + repoFile.filename + "\",\n" +
                 "   \"javaDoc\": \"" + method.getDocComment() + "\",\n" +
-                "   \"lineNumber\": " + method.getPosition().getLine() + "\",\n" +
+                "   \"lineNumber\": " + method.getPosition().getLine() + ",\n" +
                 "   \"visibility\": \"" + method.getVisibility() + "\",\n";
 
         // Create modifiers list
