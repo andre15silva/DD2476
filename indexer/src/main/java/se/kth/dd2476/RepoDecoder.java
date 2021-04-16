@@ -1,5 +1,6 @@
 package se.kth.dd2476;
 
+import com.google.gson.Gson;
 import okhttp3.*;
 import org.jetbrains.annotations.NotNull;
 import spoon.Launcher;
@@ -10,10 +11,8 @@ import spoon.reflect.reference.CtTypeReference;
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Base64;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * An iterable class to decode github files.
@@ -23,6 +22,8 @@ import java.util.Scanner;
 public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
 
     static class RepoFile {
+        String repoName; //name of the repo
+        String className; //name of the class
         File file; //file with the code
         String filename; //name of the file
         String URL; //github proper url
@@ -33,6 +34,27 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
             var brokenURL = URL.split("/");
             filename = brokenURL[brokenURL.length - 1];
         }
+    }
+
+    private static class Argument {
+        public String type;
+        public String name;
+    }
+
+    private static class IndexableMethod {
+        public String repository;
+        public String className;
+        public String fileURL;
+        public String returnType;
+        public String name;
+        public String file;
+        public String javaDoc;
+        public Integer lineNumber;
+        public String visibility;
+        public List<String> modifiers;
+        public List<Argument> arguments;
+        public List<String> thrown;
+        public List<String> annotations;
     }
 
     Scanner scanner;
@@ -137,11 +159,12 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
         Scanner input = new Scanner(System.in);
         var repoDecoder = new RepoDecoder(input);
         for (var repoFile : repoDecoder) {
-            spoonDoesSomething(repoDecoder.repoName, repoFile);
+            repoFile.repoName = repoDecoder.repoName;
+            indexFile(repoFile);
         }
     }
 
-    private static void spoonDoesSomething(String repo, RepoFile repoFile) {
+    private static void indexFile(RepoFile repoFile) {
 	    Launcher launcher = new Launcher();
 
 	    launcher.addInputResource(repoFile.file.getPath());
@@ -149,66 +172,50 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
 
 	    CtModel model = launcher.getModel();
 
-	    for (CtType type : model.getAllTypes())
-	        for (Object method : type.getMethods()) {
-	            indexMethod(repo, repoFile, (CtMethod) method);
+	    for (CtType<?> type : model.getAllTypes())
+            for (Object method : type.getMethods()) {
+	            repoFile.className = type.getSimpleName();
+	            indexMethod(repoFile, (CtMethod) method);
             }
     }
 
-    private static void indexMethod(String repo, RepoFile repoFile, CtMethod method) {
-        // Create base properties body
-        String body = "{\n" +
-                "   \"repository\": \"" + repo + "\",\n" +
-                "   \"fileUrl\": \"" + repoFile.URL + "\",\n" +
-                "   \"returnType\": \"" + method.getType().getSimpleName() + "\",\n" +
-                "   \"name\": \"" + method.getSimpleName() + "\",\n" +
-                "   \"file\": \"" + repoFile.filename + "\",\n" +
-                "   \"javaDoc\": \"" + method.getDocComment() + "\",\n" +
-                "   \"lineNumber\": " + method.getPosition().getLine() + ",\n" +
-                "   \"visibility\": \"" + method.getVisibility() + "\",\n";
+    private static void indexMethod(RepoFile repoFile, CtMethod method) {
+        // Create indexable method
+        IndexableMethod indexableMethod = new IndexableMethod();
+        indexableMethod.repository = repoFile.repoName;
+        indexableMethod.fileURL = repoFile.URL;
+        indexableMethod.returnType = method.getType().getSimpleName();
+        indexableMethod.name = method.getSimpleName();
+        indexableMethod.className = repoFile.className;
+        indexableMethod.file = repoFile.filename;
+        indexableMethod.javaDoc = method.getDocComment();
+        indexableMethod.lineNumber = method.getPosition().getLine();
+        indexableMethod.visibility = method.getVisibility().toString();
+        indexableMethod.modifiers = method.getModifiers()
+                .stream().map(ModifierKind::toString).collect(Collectors.toList());
 
-        // Create modifiers list
-        body += "   \"modifiers\": [\n";
-        for (ModifierKind modifier : method.getModifiers()) {
-            body += "       \"" + modifier.toString() + "\",\n";
-        }
-        body = body.replaceAll(",\n$", "\n");
-        body += "   ],\n";
-
-        // Create args list
-        body += "   \"arguments\": [\n";
+	    indexableMethod.arguments = new ArrayList<>();
         for (Object p : method.getParameters()) {
-            CtParameter parameter = (CtParameter) p;
-            body += "       {\n" +
-                    "           \"type\": \"" + parameter.getType() + "\",\n" +
-                    "           \"name\": \"" + parameter.getSimpleName() + "\",\n" +
-                    "       },\n";
+	        CtParameter parameter = (CtParameter) p;
+	        Argument argument = new Argument();
+	        argument.type = parameter.getType().toString();
+	        argument.name = parameter.getSimpleName();
+	        indexableMethod.arguments.add(argument);
         }
-        body = body.replaceAll(",\n$", "\n");
-        body += "   ],\n";
 
-        // Create thrown types list
-        body += "   \"throws\": [\n";
+        indexableMethod.thrown =  new ArrayList<>();
         for (Object t : method.getThrownTypes()) {
             CtTypeReference type = (CtTypeReference) t;
-            body += "       \"" + type.getSimpleName() + "\",\n";
+            indexableMethod.thrown.add(type.getSimpleName());
         }
-        body = body.replaceAll(",\n$", "\n");
-        body += "   ],\n";
 
-        // Create annotations list
-        body += "   \"annotations\": [\n";
-        for (CtAnnotation annotation : method.getAnnotations()) {
-            body += "       \"" + annotation + "\",\n";
-        }
-        body = body.replaceAll(",\n$", "\n");
-        body += "   ]\n";
+        indexableMethod.annotations = method.getAnnotations()
+		        .stream().map(CtAnnotation::toString).collect(Collectors.toList());
 
-        body += "}";
-
-        System.out.println(body);
-
-        index("code/method/", body);
+        Gson gson = new Gson();
+        String json = gson.toJson(indexableMethod);
+        System.out.println(json);
+        index("code/method/", json);
     }
 
     private static void index(String path, String body) {
