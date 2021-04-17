@@ -33,6 +33,10 @@ const useStyles = makeStyles({
     noResultsFound: {
         marginTop: 10,
         marginBottom: 10,
+    },
+    queryTime: {
+        textAlign: 'left',
+        marginBottom: 5,
     }
 });
 
@@ -92,6 +96,8 @@ function App() {
     const [data, setData] = React.useState({
         methods: [],
         expanded: [],
+        queryTime: 0,
+        error: false,
     });
 
     const [searchInputValue, setSearchInputValue] = React.useState('');
@@ -108,14 +114,18 @@ function App() {
     function onFormSubmit(e) {
         e.preventDefault();
 
-        setHasSearched(true);
-
-        elasticSearchRequest("code/method/_search", "POST", {"query": {
+        elasticSearchRequest("code/method/_search", "POST", {
+            "query": {
                 "query_string": {
                     "query": searchInputValue
                 }
+            },
+            "from" : 0,
+            "size" : 1000,
             }
-        }).then((result) => {
+        ).then((result) => {
+            setHasSearched(true);
+
             let methods = [];
             let expanded = [].fill(false, 0, result.hits.hits.length);
             result.hits.hits.forEach(hit => {
@@ -127,9 +137,17 @@ function App() {
             setData({
                 methods: methods,
                 expanded: expanded,
+                queryTime:result.took,
+                error: false,
             });
         }, (error) => {
             console.log(error);
+            setData({
+                methods: [],
+                expanded: [],
+                queryTime: 0,
+                error: true
+            });
         });
     }
 
@@ -149,57 +167,68 @@ function App() {
               </form>
           </Paper>
 
+          {data.error &&
+            <Typography color={"error"}>An error occurred</Typography>
+          }
 
-          <Paper className={classes.root}>
-              {data.methods.length === 0 ? (
-                  hasSearched &&
-                    <Typography className={classes.noResultsFound}>No results found</Typography>
-              ) : (
-                  <Table>
-                      <TableBody>
-                          {data.methods.map((method, index) => (
-                          <TableRow
-                              hover={!data.expanded[index] ? true : undefined}
-                              onClick={(e) => rowClick(e, index)}
-                              key={index}
-                              className={classes.tableRow}
-                          >
-                              <TableCell component="th" scope="row">
-                                  <Typography
-                                      color="textPrimary">
-                                      <IconButton className={classes.expandButton} aria-label="expand row" size="small" onClick={(e) => rowClick(e, index)}>
-                                          {data.expanded[index] ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
-                                      </IconButton>
-                                      {method.toString()}
-                                  </Typography>
-                                  {data.expanded[index] && (
-                                      <div
-                                          onClick={(e) => {
-                                              e.stopPropagation();
-                                          }}
-                                      >
-                                          <hr />
-                                          <p>Method name: {method.name}</p>
-                                          <p>Return type: {method.returnType}</p>
-                                          <p>Arguments: {method.arguments.map(arg => arg.toString()).join(', ')}</p>
-                                          <p>Visibility: {method.visibility}</p>
-                                          <p>Javadoc: {method.javaDoc}</p>
-                                          <p>Modifiers: {method.modifiers.join(', ')}</p>
-                                          <p>Throws: {method.throws.join(', ')}</p>
-                                          <p>Annotations: {method.annotations.join(', ')}</p>
-                                          <p>Repository: <a rel="noreferrer" target="_blank" href={"https://github.com/" + method.repository}>{method.repository}</a></p>
-                                          <p>File: <a rel="noreferrer" target="_blank" href={method.fileUrl}>{method.file}</a></p>
-                                          <p>Line number: <a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>{method.lineNumber}</a></p>
-                                          <p><a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>Go to code</a></p>
-                                      </div>
-                                  )}
-                              </TableCell>
-                          </TableRow>
-                          ))}
-                      </TableBody>
-                  </Table>
-              )}
-          </Paper>
+          {hasSearched &&
+            <div>
+                <Typography color={"textSecondary"} className={classes.queryTime}>{data.methods.length} results in {data.queryTime} ms</Typography>
+                <Paper className={classes.root}>
+                    {data.methods.length === 0 ? (
+                        <Typography className={classes.noResultsFound}>No results found</Typography>
+                    ) : (
+                        <div>
+                            <Table>
+                                <TableBody>
+                                    {data.methods.map((method, index) => (
+                                        <TableRow
+                                            hover={!data.expanded[index] ? true : undefined}
+                                            onClick={(e) => rowClick(e, index)}
+                                            key={index}
+                                            className={classes.tableRow}
+                                        >
+                                            <TableCell component="th" scope="row">
+                                                <Typography
+                                                    color="textPrimary">
+                                                    <IconButton className={classes.expandButton} aria-label="expand row" size="small" onClick={(e) => rowClick(e, index)}>
+                                                        {data.expanded[index] ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
+                                                    </IconButton>
+                                                    {method.toString()}
+                                                </Typography> <Typography color={"textSecondary"}>Defined in class {method.className} in repository {method.repository}</Typography>
+                                                {data.expanded[index] && (
+                                                    <div
+                                                        onClick={(e) => {
+                                                            e.stopPropagation();
+                                                        }}
+                                                    >
+                                                        <hr />
+                                                        <p>Method name: {method.name}</p>
+                                                        <p>Return type: {method.returnType}</p>
+                                                        <p>Arguments: {method.arguments.map(arg => arg.toString()).join(', ')}</p>
+                                                        <p>Visibility: {method.visibility}</p>
+                                                        <p>Javadoc: {method.javaDoc}</p>
+                                                        <p>Modifiers: {method.modifiers.join(', ')}</p>
+                                                        <p>Throws: {method.thrown.join(', ')}</p>
+                                                        <p>Annotations: {method.annotations.join(', ')}</p>
+                                                        <p>Class name {method.className}</p>
+                                                        <p>Repository: <a rel="noreferrer" target="_blank" href={"https://github.com/" + method.repository}>{method.repository}</a></p>
+                                                        <p>File: <a rel="noreferrer" target="_blank" href={method.fileUrl}>{method.file}</a></p>
+                                                        <p>Line number: <a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>{method.lineNumber}</a></p>
+                                                        <p><a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>Go to code</a></p>
+                                                    </div>
+                                                )}
+                                            </TableCell>
+                                        </TableRow>
+                                    ))}
+                                </TableBody>
+                            </Table>
+                        </div>
+                    )}
+                </Paper>
+            </div>
+          }
+
       </Page>
     </div>
   );

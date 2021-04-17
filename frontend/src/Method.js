@@ -8,12 +8,13 @@ export default class Method {
     this.repository = null;
     this.file = null;
     this.lineNumber = null;
-    this.fileUrl = "null";
+    this.fileURL = null;
     this.visibility = null;
     this.javaDoc = null;
     this.modifiers = [];
-    this.throws = [];
+    this.thrown = [];
     this.annotations = [];
+    this.className = null;
   }
 
   fromJson(json) {
@@ -22,12 +23,13 @@ export default class Method {
     this.repository = json.repository;
     this.file = json.file;
     this.lineNumber = json.lineNumber;
-    this.fileUrl = json.fileUrl;
+    this.fileUrl = json.fileURL;
     this.visibility = json.visibility;
     this.javaDoc = json.javaDoc;
     this.modifiers = json.modifiers;
-    this.throws = json.throws;
+    this.thrown = json.thrown;
     this.annotations = json.annotations;
+    this.className = json.className;
 
     if ("arguments" in json) {
       this.arguments = [];
