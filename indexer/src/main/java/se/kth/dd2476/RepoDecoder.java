@@ -41,9 +41,11 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
     String repoURL;
     ArrayList<String> blobURLs = new ArrayList<>();
     ArrayList<String> properURLs = new ArrayList<>();
+    ArrayList<String> tokens;
 
-    public RepoDecoder(Scanner scanner) {
+    public RepoDecoder(Scanner scanner, ArrayList<String> tokens) {
         this.scanner = scanner;
+        this.tokens = tokens;
         assert (scanner.hasNext());
         repoName = scanner.next();
         assert (scanner.hasNext());
@@ -69,17 +71,33 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
 
             @Override
             public RepoFile next() {
-                if (index < blobURLs.size())
-                    return new RepoFile(getDecodedString(blobURLs.get(index)), properURLs.get(index++));
+                if (index < blobURLs.size()) {
+                    var decodedString = getDecodedString(blobURLs.get(index));
+                    if(decodedString != null)
+                        return new RepoFile(decodedString, properURLs.get(index++));
+                    else{
+                        return null;
+                    }
+                }
                 index++;
                 String fileProperURL = scanner.next();
                 assert(scanner.hasNext());
                 String fileBlobURL = scanner.next();
                 properURLs.add(fileProperURL);
                 blobURLs.add(fileBlobURL);
-                return new RepoFile(getDecodedString(fileBlobURL), fileProperURL);
+                var decodedString = getDecodedString(fileBlobURL);
+                if(decodedString != null)
+                    return new RepoFile(getDecodedString(fileBlobURL), fileProperURL);
+                else{
+                    index--;
+                    return null;
+                }
             }
         };
+    }
+
+    private File getDecodedString(String fileURL){
+        return getDecodedString(fileURL, tokens.size());
     }
 
     /**
@@ -88,11 +106,12 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
      * @param fileURL a url of a file of the type api.github.com/<user>/<repo>/blob/sha
      * @return A string with the code
      */
-    private File getDecodedString(String fileURL) {
+    private File getDecodedString(String fileURL, int count) {
         try {
             URL url = new URL(fileURL);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
+            connection.addRequestProperty("Authorization",  "token " + tokens.get(0));
             connection.connect();
             BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
             String inputLine;
@@ -123,7 +142,12 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
             writer.close();
             return result;
         } catch (IOException e) {
-            e.printStackTrace();
+            //should be 403
+            var tmp = tokens.get(0);
+            tokens.remove(0);
+            tokens.add(tmp);
+            if(count > 0)
+                return getDecodedString(fileURL, count - 1);
             return null;
         }
     }
@@ -131,13 +155,32 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
     /**
      * Example of usage
      *
-     * @param args
+     * @param args The arguments from commandline, assume that the first argument is the token list filename
      */
     public static void main(String[] args) {
+        assert(args.length > 0);
+        ArrayList<String> tokens = new ArrayList<>();
+        try (BufferedReader br = new BufferedReader(new FileReader(args[0]))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                tokens.add(line);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         Scanner input = new Scanner(System.in);
-        var repoDecoder = new RepoDecoder(input);
+        var repoDecoder = new RepoDecoder(input, tokens);
         for (var repoFile : repoDecoder) {
-            spoonDoesSomething(repoDecoder.repoName, repoFile);
+            if (repoFile != null)
+                spoonDoesSomething(repoDecoder.repoName, repoFile);
+            else {
+                System.err.println("We are out of token, going to sleep!");
+                try {
+                    Thread.sleep(1000 * 60 * 10); //sleep 10 minutes
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
