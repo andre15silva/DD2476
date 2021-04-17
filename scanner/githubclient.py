@@ -5,11 +5,12 @@ import json
 class GithubClient:
     """GithubClient performs operations using Github API"""
 
-    def __init__(self,authorization_token):
+    def __init__(self, token_list):
         """
-        :param authorization_token (str): Github API token
+        :param token_list (str): List of Github API tokens
         """
-        self.authorization_token = authorization_token
+        self.token_index = 0
+        self.token_list = token_list
 
     def get_repositories(self, limit):
         response = self._place_get_api("https://api.github.com/search/repositories?q=language:Java&sort=stars&order=desc&per_page=" + str(limit))
@@ -30,8 +31,17 @@ class GithubClient:
         return response
 
     def _place_get_api(self,url):
-        response = requests.get(url, headers={"Authorization": "token " + self.authorization_token})
+        response = requests.get(url, headers={"Authorization": "token " + self.token_list[self.token_index]})
         if response.status_code >= 300:
-            print("Request failed for url {}".format(url))
-            return None
+            if response.status_code == 403:
+                if self.token_index == len(self.token_list) - 1:
+                    print("Out of GitHub API tokens")
+                    return None
+                else:
+                    print("Using token # " + self.token_index)
+                    self.token_index += 1
+                    return _place_get_api(url)
+            else:
+                print("Request failed for url {}".format(url))
+                return None
         return json.loads(response.content)

@@ -45,8 +45,8 @@ def main():
 
     #get authorization token from arguments
     parser = argparse.ArgumentParser(description='Process some integers.')
-    parser.add_argument('--api-token',
-                        help='GitHub API token')
+    parser.add_argument('--token-list',
+                        help='File containing GitHub API tokens')
     parser.add_argument('--indexer',
                         help='Indexer binary to run and pass repositories to')
     parser.add_argument('--limit',
@@ -54,9 +54,13 @@ def main():
     args = vars(parser.parse_args())
 
     limit = args["limit"]
+    token_list_file = args["token_list"]
+    token_list = []
+    with open(token_list_file) as f:
+        token_list = [line.rstrip() for line in f]
 
     #create GithubClient class
-    github_client = GithubClient(args["api_token"])
+    github_client = GithubClient(token_list)
     list_repositories = github_client.get_repositories(limit)['items']
 
     print("Got " + str(len(list_repositories)) + " repositories")
