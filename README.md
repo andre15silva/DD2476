@@ -4,11 +4,18 @@ The search engine uses Elastic Search to index GitHub and allow users to look fo
 
 # Run instructions
 ## Scanner
-`python3 scanner/main.py --api-token <github api token> --indexer "java -cp indexer RepoDecoder" --limit 10`
+The below assumes that the maven project is first compiled with `mvn install`.  
+It is also assumed that a file tokenlist.txt exists with one GitLab API token per line. API tokens for GitHub can be created at [https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
 
-The above assumes that RepoDecoder is compiled with `javac RepoDecoder`.
+From within the indexer/ directory run:  
+`python3 ../scanner/main.py --indexer "mvn exec:java -Dexec.args=\"../tokenlist.txt\"" --limit 100 --token-list ../tokenlist.txt`
 
-API tokens for GitHub can be created at [https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+
+## Frontend
+From within the frontend/ directory run `npm install` to install the app and `npm start` to start the frontend server.
+
+To allow use of Elastic Search from the browser Elastic Search must be started with the following command line arguments:  
+` elasticsearch -E http.cors.enabled=true -E http.cors.allow-origin="*" -E http.cors.allow-methods='OPTIONS, HEAD, GET, POST, PUT, DELETE' -E http.cors.allow-headers='X-Requested-With,X-Auth-Token,Content-Type,Content-Length' -E http.cors.allow-credentials=true`
 
 # TODOs
 1. Obtain a lot of Java files from Github (using Github API) (https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
