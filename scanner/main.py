@@ -12,7 +12,7 @@ def write_urls(repository_name, repository_url, url_files):
         f.write("\n" + url)
     f.close()
 
-def get_fileurls(githubclient, response2):
+def get_fileurls(githubclient, response2, repo_url):
     files = []
     for j in response2:
         if j["type"] == "file":
@@ -24,7 +24,7 @@ def get_fileurls(githubclient, response2):
                 continue
             for k in dir_response["tree"]:
                 if k["type"] == "blob" and k["path"].endswith(".java"):
-                    files.append((k["path"], k["url"]))
+                    files.append((repo_url + "/" + j["name"] + "/" + k["path"], k["url"]))
     return files
 
 def print_repoinfo(repository_name,repository_url,files):
@@ -67,7 +67,7 @@ def main():
         repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
         respository_content = github_client.get_repository_content(repository_name)
 
-        files = get_fileurls(github_client,respository_content)
+        files = get_fileurls(github_client,respository_content, repository_url)
         run_indexer(args["indexer"], repository_name,repository_url,files)
         print_repoinfo(repository_name,repository_url,files)
 
