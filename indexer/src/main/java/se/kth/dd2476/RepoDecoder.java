@@ -233,7 +233,11 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
         indexableMethod.file = repoFile.filename;
         indexableMethod.javaDoc = method.getDocComment();
         indexableMethod.lineNumber = method.getPosition().getLine();
-        indexableMethod.visibility = method.getVisibility().toString();
+        if (method.getVisibility() != null) {
+            indexableMethod.visibility = method.getVisibility().toString();
+        } else {
+            indexableMethod.visibility = "";
+        }
         indexableMethod.modifiers = method.getModifiers()
                 .stream().map(ModifierKind::toString).collect(Collectors.toList());
 
