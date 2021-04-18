@@ -4,14 +4,6 @@ import argparse
 from subprocess import Popen, PIPE, STDOUT
 
 
-def write_urls(repository_name, repository_url, url_files):
-    f = open("repository"+ str(counter) +".txt", "w")
-    f.write(repository_name + "\n")
-    f.write(repository_url)
-    for url in url_files:
-        f.write("\n" + url)
-    f.close()
-
 def get_fileurls(githubclient, response2, repo_url):
     files = []
     for j in response2:

@@ -40,7 +40,7 @@ class GithubClient:
                 else:
                     print("Using token # " + self.token_index)
                     self.token_index += 1
-                    return _place_get_api(url)
+                    return self._place_get_api(url)
             else:
                 print("Request failed for url {}".format(url))
                 return None
