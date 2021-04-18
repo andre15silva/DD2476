@@ -12,8 +12,10 @@ class GithubClient:
         self.token_index = 0
         self.token_list = token_list
 
-    def get_repositories(self, limit):
-        response = self._place_get_api("https://api.github.com/search/repositories?q=language:Java&sort=stars&order=desc&per_page=" + str(limit))
+    def get_repositories(self, limit, page):
+        response = self._place_get_api(
+            "https://api.github.com/search/repositories?q=language:Java&sort=stars&order=desc&page=" + str(
+                page) + "&per_page=" + str(limit))
         if response is None:
             sys.exit("Request error in getting repositories")
         return response
