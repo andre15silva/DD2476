@@ -53,19 +53,21 @@ def main():
 
     #create GithubClient class
     github_client = GithubClient(token_list)
-    list_repositories = github_client.get_repositories(limit)['items']
-
-    print("Got " + str(len(list_repositories)) + " repositories")
-
-    #for every repository get a list of URL of the files
-    for i, repository_dict in enumerate(list_repositories):
-        repository_name = repository_dict['full_name']
-        repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
-        respository_content = github_client.get_repository_content(repository_name)
-
-        files = get_fileurls(github_client,respository_content, repository_url)
-        run_indexer(args["indexer"], repository_name,repository_url,files)
-        print_repoinfo(repository_name,repository_url,files)
+    #Calculate how many pages we need to iterate (max repos/page = 100)
+    num_pages = int(limit/100)
+    for page in range(num_pages+1):
+        page = page + 1
+        limit_call = (100*page)%limit
+        list_repositories = github_client.get_repositories(limit_call,page)['items']
+        print("Page number " + str(page) + ". Got " + str(len(list_repositories)) + " repositories")
+        #for every repository get a list of URL of the files
+        for i, repository_dict in enumerate(list_repositories):
+            repository_name = repository_dict['full_name']
+            repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
+            respository_content = github_client.get_repository_content(repository_name)
+            files = get_fileurls(github_client,respository_content, repository_url)
+            run_indexer(args["indexer"], repository_name,repository_url,files)
+            print_repoinfo(repository_name,repository_url,files)
 
 
 if __name__ == "__main__":
