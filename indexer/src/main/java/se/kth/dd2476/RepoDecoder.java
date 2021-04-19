@@ -280,7 +280,8 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
             Call call = client.newCall(request);
             Response response = call.execute();
             System.out.println(response);
-        } catch (IOException e) {
+            response.body().close();
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
