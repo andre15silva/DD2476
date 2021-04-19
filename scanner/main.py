@@ -57,7 +57,10 @@ def main():
     num_pages = int(limit/100)
     for page in range(num_pages+1):
         page = page + 1
-        limit_call = (100*page)%limit
+        if page == num_pages - 1:
+            limit_call = limit % 100
+        else:
+            limit_call = 100
         list_repositories = github_client.get_repositories(limit_call,page)['items']
         print("Page number " + str(page) + ". Got " + str(len(list_repositories)) + " repositories")
         #for every repository get a list of URL of the files
