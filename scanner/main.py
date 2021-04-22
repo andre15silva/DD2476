@@ -63,12 +63,15 @@ def main():
         page += 1
         # for every repository get a list of URL of the files
         for i, repository_dict in enumerate(list_repositories):
-            repository_name = repository_dict['full_name']
-            repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
-            respository_content = github_client.get_repository_content(repository_name)
-            files = get_fileurls(github_client,respository_content, repository_url)
-            run_indexer(args["indexer"], repository_name,repository_url,files)
-            print_repoinfo(repository_name,repository_url,files)
+            try:
+                repository_name = repository_dict['full_name']
+                repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
+                respository_content = github_client.get_repository_content(repository_name)
+                files = get_fileurls(github_client,respository_content, repository_url)
+                run_indexer(args["indexer"], repository_name,repository_url,files)
+                print_repoinfo(repository_name,repository_url,files)
+            except:
+                print(f"There was an error when indexing {repository_name}")
 
 
 if __name__ == "__main__":
