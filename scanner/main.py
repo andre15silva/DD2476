@@ -1,4 +1,3 @@
-
 from githubclient import GithubClient
 import argparse
 from subprocess import Popen, PIPE, STDOUT
@@ -42,7 +41,7 @@ def main():
     parser.add_argument('--indexer',
                         help='Indexer binary to run and pass repositories to')
     parser.add_argument('--limit',
-                        help='Limit the number of repositories to scan', nargs='?', default=2, type=int)
+                        help='Limit the number of repositories to scan', nargs='?', default=-1, type=int)
     args = vars(parser.parse_args())
 
     limit = args["limit"]
@@ -51,19 +50,18 @@ def main():
     with open(token_list_file) as f:
         token_list = [line.rstrip() for line in f]
 
-    #create GithubClient class
+    # create GithubClient class
     github_client = GithubClient(token_list)
-    #Calculate how many pages we need to iterate (max repos/page = 100)
-    num_pages = int(limit/100)
-    for page in range(num_pages+1):
-        page = page + 1
-        if page == num_pages - 1:
-            limit_call = limit % 100
-        else:
-            limit_call = 100
-        list_repositories = github_client.get_repositories(limit_call,page)['items']
+
+    # Calculate how many pages we need to iterate (max repos/page = 100)
+    scanned_repos = 0
+    page = 1
+    while limit == -1 or scanned_repos < limit:
+        limit_call = 100 if limit == -1 else min(100, limit - scanned_repos)
+        list_repositories = github_client.get_repositories(limit_call, page)['items']
         print("Page number " + str(page) + ". Got " + str(len(list_repositories)) + " repositories")
-        #for every repository get a list of URL of the files
+        page += 1
+        # for every repository get a list of URL of the files
         for i, repository_dict in enumerate(list_repositories):
             repository_name = repository_dict['full_name']
             repository_url = repository_dict["html_url"] + "/blob/" + repository_dict["default_branch"]
