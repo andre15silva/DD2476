@@ -40,7 +40,7 @@ class GithubClient:
                     print("Out of GitHub API tokens")
                     return None
                 else:
-                    print("Using token # " + self.token_index)
+                    print("Using token # " + str(self.token_index))
                     self.token_index += 1
                     return self._place_get_api(url)
             else:
