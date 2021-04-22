@@ -37,8 +37,9 @@ class GithubClient:
         if response.status_code >= 300:
             if response.status_code == 403:
                 if self.token_index == len(self.token_list) - 1:
-                    print("Out of GitHub API tokens")
-                    return None
+                    print("Out of GitHub API tokens. Going back to the first...")
+                    self.token_index = 0
+                    return self._place_get_api(url)
                 else:
                     print("Using token # " + str(self.token_index))
                     self.token_index += 1
