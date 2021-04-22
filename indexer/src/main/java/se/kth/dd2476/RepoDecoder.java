@@ -55,6 +55,7 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
         public List<Argument> arguments;
         public List<String> thrown;
         public List<String> annotations;
+        public String preview;
     }
 
     Scanner scanner;
@@ -259,9 +260,12 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
         indexableMethod.annotations = method.getAnnotations()
 		        .stream().map(CtAnnotation::toString).collect(Collectors.toList());
 
+        method.setDocComment("");
+        List<String> methodList = Arrays.asList(method.prettyprint().split("\n"));
+        indexableMethod.preview = methodList.subList(3, Math.min(13, methodList.size())).stream().reduce((x, y) -> x + "\n" + y).get();
+
         Gson gson = new Gson();
         String json = gson.toJson(indexableMethod);
-        System.out.println(json);
         index("code/method/", json);
     }
 
@@ -279,7 +283,10 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
         try {
             Call call = client.newCall(request);
             Response response = call.execute();
-            System.out.println(response);
+            if (!response.isSuccessful()) {
+                System.out.println(body);
+                System.out.println(response);
+            }
             response.body().close();
         } catch (Exception e) {
             e.printStackTrace();
