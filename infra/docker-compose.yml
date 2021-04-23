@@ -12,6 +12,7 @@ services:
             - http.cors.allow-headers=X-Requested-With,X-Auth-Token,Content-Type,Content-Length,Authorization
             - http.cors.allow-credentials=true
             - bootstrap.memory_lock=true
+            - path.repo='["/usr/share/elastic-search"]'
             - 'ES_JAVA_OPTS=-Xms512m -Xmx512m'
         ulimits:
             memlock:
@@ -19,6 +20,7 @@ services:
                 hard: -1
         volumes:
             - elasticsearch-data:/usr/share/elasticsearch/data
+            - elasticsearch-backup:/usr/share/elasticsearch/backup
         ports:
             - 9200:9200
             - 9300:9300
@@ -27,6 +29,8 @@ services:
 
 volumes:
     elasticsearch-data:
+        driver: local
+    elasticsearch-backup:
         driver: local
 
 networks:
