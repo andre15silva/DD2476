@@ -83,7 +83,7 @@ function SearchResults({data, rowClick}) {
                                   <p>Modifiers: {method.modifiers.join(', ')}</p>
                                   <p>Throws: {method.thrown.join(', ')}</p>
                                   <p>Annotations: {method.annotations.join(', ')}</p>
-                                  <p>Class name {method.className}</p>
+                                  <p>Class name: {method.className}</p>
                                   <p>Repository: <a rel="noreferrer" target="_blank" href={"https://github.com/" + method.repository}>{method.repository}</a></p>
                                   <p>File: <a rel="noreferrer" target="_blank" href={method.fileUrl}>{method.file}</a></p>
                                   <p>Line number: <a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>{method.lineNumber}</a></p>
