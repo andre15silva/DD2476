@@ -31,7 +31,8 @@ export default class Method {
     this.thrown = json.thrown;
     this.annotations = json.annotations;
     this.className = json.className;
-    this.preview = json.preview.split('\n').map((line, index) => `${index + 1} ${line}`).join('\n');
+    if ("preview" in json && json.preview)
+      this.preview = json.preview.split('\n').map((line, index) => `${index + 1} ${line}`).join('\n');
 
     if ("arguments" in json) {
       this.arguments = [];
