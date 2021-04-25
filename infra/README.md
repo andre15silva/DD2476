@@ -22,7 +22,7 @@ NOTE: Replace the source path accordingly.
 ## Run the container again
 
 ```sh
-docker-compute up
+docker-compose up
 ```
 
 Now, everything should be working with the latest version of the data.
