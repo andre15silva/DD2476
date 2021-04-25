@@ -94,7 +94,7 @@ function SearchForm({searchFunc}) {
       <Paper className={classes.searchForm}>
         <form noValidate autoComplete="off" onSubmit={(e) => onFormSubmit(e)}>
           <ButtonGroup color="primary" aria-label="outlined primary button group">
-            <Button onClick={() => setAdvancedSearch(!advancedSearch)} variant={advancedSearch ? "outlined" : "contained"}>Simple</Button>
+            <Button onClick={() => setAdvancedSearch(!advancedSearch)} variant={advancedSearch ? "outlined" : "contained"}>Basic</Button>
             <Button onClick={() => setAdvancedSearch(!advancedSearch)} variant={advancedSearch ? "contained" : "outlined"}>Advanced</Button>
           </ButtonGroup>
           <br/> <br/>
