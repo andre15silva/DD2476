@@ -197,6 +197,7 @@ public class RepoDecoder implements Iterable<RepoDecoder.RepoFile> {
             if (repoFile != null) {
                 repoFile.repoName = repoDecoder.repoName;
                 indexFile(repoFile);
+                repoFile.file.delete();
             } else {
                 System.err.println("We are out of token, going to sleep!");
                 try {

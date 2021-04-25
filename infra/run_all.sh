@@ -14,7 +14,7 @@ echo "Intalled indexer"
 echo "Launching index..."
 current_time=$(date '+%s')
 filename="indexer_log_${current_time}.log"
-python ../scanner/main.py --indexer "mvn exec:java -Dexec.args=\"../tokenlist.txt\" -f ../indexer" --token-list ../tokenlist.txt > $filename &
+stdbuf -oL python ../scanner/main.py --indexer "mvn exec:java -Dexec.args=\"../tokenlist.txt\" -f ../indexer" --token-list ../tokenlist.txt &> $filename &
 indexer_pid=$!
 echo "Lanched indexer with pid ${indexer_pid}"
 

@@ -1,0 +1,2662 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.982 s
+[INFO] Finished at: 2021-04-23T12:43:18+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:44 min
+[INFO] Finished at: 2021-04-23T12:44:11+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: org.elasticsearch.http.HttpTransportSettings$SETTING_HTTP_TCP_NO_DELAY in context of type: org.elasticsearch.http.netty4.Netty4HttpServerTransport
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTry (CtScanner.java:738)
+    at spoon.support.reflect.code.CtTryImpl.accept (CtTryImpl.java:43)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  22:47 min
+[INFO] Finished at: 2021-04-23T13:06:09+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: org.elasticsearch.http.HttpTransportSettings$SETTING_HTTP_TCP_NO_DELAY in context of type: org.elasticsearch.http.netty4.Netty4HttpServerTransport -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  3.928 s
+[INFO] Finished at: 2021-04-23T13:06:16+01:00
+[INFO] ------------------------------------------------------------------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+java.lang.NullPointerException
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:232)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  24.677 s
+[INFO] Finished at: 2021-04-23T13:06:38+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. null: NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:05 min
+[INFO] Finished at: 2021-04-23T13:10:48+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15:14 min
+[INFO] Finished at: 2021-04-23T13:23:40+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: MimeTypeUtils$TEXT_PLAIN in context of type: org.springframework.messaging.rsocket.DefaultMetadataExtractorTests
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtLocalVariable (CtScanner.java:532)
+    at spoon.support.reflect.code.CtLocalVariableImpl.accept (CtLocalVariableImpl.java:51)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  31:35 min
+[INFO] Finished at: 2021-04-23T13:52:55+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: MimeTypeUtils$TEXT_PLAIN in context of type: org.springframework.messaging.rsocket.DefaultMetadataExtractorTests -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+spoon.SpoonException: Unexpected QualifiedNameReference tokens Maps.NavigableKeySet<K, V> for typeRef: Maps.NavigableKeySet
+    at spoon.support.compiler.jdt.JDTTreeBuilderHelper.handleImplicit (JDTTreeBuilderHelper.java:553)
+    at spoon.support.compiler.jdt.JDTTreeBuilderHelper.handleImplicit (JDTTreeBuilderHelper.java:487)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getTypeReference (ReferenceBuilder.java:524)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getExecutableReference (ReferenceBuilder.java:457)
+    at spoon.support.compiler.jdt.JDTTreeBuilder.visit (JDTTreeBuilder.java:895)
+    at org.eclipse.jdt.internal.compiler.ast.QualifiedAllocationExpression.traverse (QualifiedAllocationExpression.java:677)
+    at org.eclipse.jdt.internal.compiler.ast.ReturnStatement.traverse (ReturnStatement.java:387)
+    at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse (MethodDeclaration.java:411)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1821)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1673)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:822)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:783)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.traverseUnitDeclaration (JDTBasedSpoonCompiler.java:480)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.lambda$buildModel$0 (JDTBasedSpoonCompiler.java:437)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.forEachCompilationUnit (JDTBasedSpoonCompiler.java:464)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel (JDTBasedSpoonCompiler.java:435)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel (JDTBasedSpoonCompiler.java:372)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources (JDTBasedSpoonCompiler.java:335)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:116)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:99)
+    at spoon.Launcher.buildModel (Launcher.java:772)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:216)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:47 min
+[INFO] Finished at: 2021-04-23T14:02:49+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Unexpected QualifiedNameReference tokens Maps.NavigableKeySet<K, V> for typeRef: Maps.NavigableKeySet -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SSLLFF44JJ::  FFaaiilleedd  tto looa d lcolaasds c "loarsgs.s l"fo4rjg..silmfp4lj..Sitmaptli.cStLaotggeircBLionggerBinder".
+dSeLrF"4.J
+: DSeLfFau4lJt:i nDge ftaou lntoi-nogp etroa tnioo-nop e(rNaOtPi)o nl o(gNgOePr) i mlpolgegmeern tiamtpiloenme
+ntSaLtFi4oJn:
+ SSeLeF 4hJt:t pS:e/e/w whwt.tspl:f/4/jw.wowr.gs/lcfo4dje.so.rhgt/mclo#dSetsa.thtmilc#LSotagtgiecrLoggerBiBnider fnodre r ffuorrther  dfeutraitlhse.r
+ details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 min
+[INFO] Finished at: 2021-04-23T14:04:56+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:49 min
+[INFO] Finished at: 2021-04-23T14:05:05+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:23 min
+[INFO] Finished at: 2021-04-23T14:05:34+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: Constants$ID_KEY in context of type: org.apache.dubbo.registry.client.metadata.ServiceInstanceMetadataUtils
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtLocalVariable (CtScanner.java:532)
+    at spoon.support.reflect.code.CtLocalVariableImpl.accept (CtLocalVariableImpl.java:51)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11:44 min
+[INFO] Finished at: 2021-04-23T14:15:11+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: Constants$ID_KEY in context of type: org.apache.dubbo.registry.client.metadata.ServiceInstanceMetadataUtils -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.971 s
+[INFO] Finished at: 2021-04-23T14:15:21+01:00
+[INFO] ------------------------------------------------------------------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by spoon.support.visitor.java.JavaReflectionTreeBuilder (file:/home/andre/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar) to field com.sun.tools.javac.code.Type.moreInfo
+WARNING: Please consider reporting this to the maintainers of spoon.support.visitor.java.JavaReflectionTreeBuilder
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:48 min
+[INFO] Finished at: 2021-04-23T14:17:08+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:42 min
+[INFO] Finished at: 2021-04-23T14:21:08+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:29 min
+[INFO] Finished at: 2021-04-23T14:21:16+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:51 min
+[INFO] Finished at: 2021-04-23T14:22:43+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.NullPointerException
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:232)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:16 min
+[INFO] Finished at: 2021-04-23T14:29:47+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. null: NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  35.492 s
+[INFO] Finished at: 2021-04-23T14:30:27+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  51.944 s
+[INFO] Finished at: 2021-04-23T14:30:45+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: EmptyBitSet$EMPTY in context of type: jadx.core.dex.visitors.blocksmaker.BlockProcessor
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtForEach (CtScanner.java:474)
+    at spoon.support.reflect.code.CtForEachImpl.accept (CtForEachImpl.java:30)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:57 min
+[INFO] Finished at: 2021-04-23T14:31:54+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: EmptyBitSet$EMPTY in context of type: jadx.core.dex.visitors.blocksmaker.BlockProcessor -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+java.lang.UnsupportedOperationException: PartialSourcePosition only contains a CompilationUnit
+    at spoon.reflect.cu.position.NoSourcePosition.getLine (NoSourcePosition.java:47)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:237)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:58 min
+[INFO] Finished at: 2021-04-23T14:34:03+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. PartialSourcePosition only contains a CompilationUnit -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.074 s
+[INFO] Finished at: 2021-04-23T14:34:31+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:34 min
+[INFO] Finished at: 2021-04-23T14:39:53+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+java.lang.UnsupportedOperationException: PartialSourcePosition only contains a CompilationUnit
+    at spoon.reflect.cu.position.NoSourcePosition.getSourceEnd (NoSourcePosition.java:67)
+    at spoon.support.compiler.jdt.PositionBuilder.buildPosition (PositionBuilder.java:521)
+    at spoon.support.compiler.jdt.ParentExiter.visitCtSwitch (ParentExiter.java:880)
+    at spoon.support.reflect.code.CtSwitchImpl.accept (CtSwitchImpl.java:36)
+    at spoon.reflect.visitor.CtInheritanceScanner.scan (CtInheritanceScanner.java:179)
+    at spoon.support.compiler.jdt.ContextBuilder.exit (ContextBuilder.java:132)
+    at spoon.support.compiler.jdt.JDTTreeBuilder.endVisit (JDTTreeBuilder.java:703)
+    at org.eclipse.jdt.internal.compiler.ast.SwitchStatement.traverse (SwitchStatement.java:866)
+    at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse (MethodDeclaration.java:411)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1689)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:822)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:783)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.traverseUnitDeclaration (JDTBasedSpoonCompiler.java:480)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.lambda$buildModel$0 (JDTBasedSpoonCompiler.java:437)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.forEachCompilationUnit (JDTBasedSpoonCompiler.java:464)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel (JDTBasedSpoonCompiler.java:435)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel (JDTBasedSpoonCompiler.java:372)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources (JDTBasedSpoonCompiler.java:335)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:116)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:99)
+    at spoon.Launcher.buildModel (Launcher.java:772)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:216)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.599 s
+[INFO] Finished at: 2021-04-23T15:27:20+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. PartialSourcePosition only contains a CompilationUnit -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: net.bytebuddy.jar.asm.Opcodes$ACC_MODULE in context of type: dev.selenium.tools.modules.ModuleGenerator
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.499 s
+[INFO] Finished at: 2021-04-23T15:30:43+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: net.bytebuddy.jar.asm.Opcodes$ACC_MODULE in context of type: dev.selenium.tools.modules.ModuleGenerator -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:02 min
+[INFO] Finished at: 2021-04-23T15:31:10+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.950 s
+[INFO] Finished at: 2021-04-23T15:31:19+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:48 min
+[INFO] Finished at: 2021-04-23T15:33:19+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.NullPointerException
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtParameter (DefaultJavaPrettyPrinter.java:1657)
+    at spoon.support.reflect.declaration.CtParameterImpl.accept (CtParameterImpl.java:55)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.ElementPrinterHelper.lambda$writeExecutableParameters$1 (ElementPrinterHelper.java:153)
+    at spoon.reflect.visitor.ElementPrinterHelper.printList (ElementPrinterHelper.java:548)
+    at spoon.reflect.visitor.ElementPrinterHelper.writeExecutableParameters (ElementPrinterHelper.java:151)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtMethod (DefaultJavaPrettyPrinter.java:1428)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.ElementPrinterHelper.writeElementList (ElementPrinterHelper.java:184)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtClass (DefaultJavaPrettyPrinter.java:647)
+    at spoon.support.reflect.declaration.CtClassImpl.accept (CtClassImpl.java:58)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtNewClass (DefaultJavaPrettyPrinter.java:1522)
+    at spoon.support.reflect.code.CtNewClassImpl.accept (CtNewClassImpl.java:25)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtInvocation (DefaultJavaPrettyPrinter.java:1335)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtLambda (DefaultJavaPrettyPrinter.java:1596)
+    at spoon.support.reflect.code.CtLambdaImpl.accept (CtLambdaImpl.java:61)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.lambda$visitCtInvocation$10 (DefaultJavaPrettyPrinter.java:1349)
+    at spoon.reflect.visitor.ElementPrinterHelper.printList (ElementPrinterHelper.java:548)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtInvocation (DefaultJavaPrettyPrinter.java:1347)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.ElementPrinterHelper.writeStatement (ElementPrinterHelper.java:170)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtBlock (DefaultJavaPrettyPrinter.java:543)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.visitCtMethod (DefaultJavaPrettyPrinter.java:1432)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.scan (DefaultJavaPrettyPrinter.java:388)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:371)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  08:16 min
+[INFO] Finished at: 2021-04-23T15:39:06+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. null: NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.730 s
+[INFO] Finished at: 2021-04-23T15:39:13+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10.857 s
+[INFO] Finished at: 2021-04-23T15:40:19+01:00
+[INFO] ------------------------------------------------------------------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:03 min
+[INFO] Finished at: 2021-04-23T15:41:13+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:05 min
+[INFO] Finished at: 2021-04-23T15:42:21+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+We are out of token, going to sleep!
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:00 min
+[INFO] Finished at: 2021-04-23T17:24:52+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.RuntimeException: Invalid package name KafkaConfig$
+    at spoon.reflect.factory.PackageFactory.get (PackageFactory.java:159)
+    at spoon.reflect.factory.TypeFactory.get (TypeFactory.java:432)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getTypeDeclaration (CtTypeReferenceImpl.java:198)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.canAccess (CtTypeReferenceImpl.java:583)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:704)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  10:46 min
+[INFO] Finished at: 2021-04-23T17:33:22+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Invalid package name KafkaConfig$ -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:04 min
+[INFO] Finished at: 2021-04-23T17:38:36+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:05 min
+[INFO] Finished at: 2021-04-23T17:54:58+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19:49 min
+[INFO] Finished at: 2021-04-23T17:56:08+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: LogUtil$FATAL_LOG in context of type: com.alibaba.nacos.config.server.service.repository.embedded.BaseDatabaseOperate
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtCatch (CtScanner.java:325)
+    at spoon.support.reflect.code.CtCatchImpl.accept (CtCatchImpl.java:32)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtTry (CtScanner.java:739)
+    at spoon.support.reflect.code.CtTryImpl.accept (CtTryImpl.java:43)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:23 min
+[INFO] Finished at: 2021-04-23T17:57:24+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: LogUtil$FATAL_LOG in context of type: com.alibaba.nacos.config.server.service.repository.embedded.BaseDatabaseOperate -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[WARNING] 
+spoon.SpoonException: Not allowed javaletter or keyword in identifier found. See JLS for correct identifier. Identifier: Run<?,?>.Artifact
+    at spoon.support.reflect.reference.CtReferenceImpl.checkIdentiferForJLSCorrectness (CtReferenceImpl.java:108)
+    at spoon.support.reflect.reference.CtReferenceImpl.setSimpleName (CtReferenceImpl.java:52)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getTypeReference (ReferenceBuilder.java:705)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getTypeParameterReference (ReferenceBuilder.java:724)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getTypeParameterReference (ReferenceBuilder.java:542)
+    at spoon.support.compiler.jdt.ReferenceBuilder.buildTypeParameterReference (ReferenceBuilder.java:175)
+    at spoon.support.compiler.jdt.ReferenceBuilder.buildTypeReferenceInternal (ReferenceBuilder.java:208)
+    at spoon.support.compiler.jdt.ReferenceBuilder.buildTypeReference (ReferenceBuilder.java:137)
+    at spoon.support.compiler.jdt.ReferenceBuilder.buildTypeReference (ReferenceBuilder.java:130)
+    at spoon.support.compiler.jdt.JDTTreeBuilder.createParameterizedType (JDTTreeBuilder.java:1438)
+    at spoon.support.compiler.jdt.JDTTreeBuilder.visit (JDTTreeBuilder.java:1426)
+    at org.eclipse.jdt.internal.compiler.ast.ParameterizedSingleTypeReference.traverse (ParameterizedSingleTypeReference.java:405)
+    at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse (MethodDeclaration.java:397)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1689)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:822)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:783)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.traverseUnitDeclaration (JDTBasedSpoonCompiler.java:480)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.lambda$buildModel$0 (JDTBasedSpoonCompiler.java:437)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.forEachCompilationUnit (JDTBasedSpoonCompiler.java:464)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel (JDTBasedSpoonCompiler.java:435)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel (JDTBasedSpoonCompiler.java:372)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources (JDTBasedSpoonCompiler.java:335)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:116)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:99)
+    at spoon.Launcher.buildModel (Launcher.java:772)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:216)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  09:30 min
+[INFO] Finished at: 2021-04-23T18:07:00+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Not allowed javaletter or keyword in identifier found. See JLS for correct identifier. Identifier: Run<?,?>.Artifact -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  45.114 s
+[INFO] Finished at: 2021-04-23T18:11:47+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:52 min
+[INFO] Finished at: 2021-04-23T18:12:57+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.RuntimeException: Invalid package name SWContextCarrier$
+    at spoon.reflect.factory.PackageFactory.get (PackageFactory.java:159)
+    at spoon.reflect.factory.TypeFactory.get (TypeFactory.java:432)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getTypeDeclaration (CtTypeReferenceImpl.java:198)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.canAccess (CtTypeReferenceImpl.java:583)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:704)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:40 min
+[INFO] Finished at: 2021-04-23T18:15:50+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Invalid package name SWContextCarrier$ -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by spoon.support.visitor.java.JavaReflectionTreeBuilder (file:/home/andre/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar) to field com.sun.tools.javac.code.Symbol$OperatorSymbol$AccessCode.numberOfAccessCodes
+WARNING: Please consider reporting this to the maintainers of spoon.support.visitor.java.JavaReflectionTreeBuilder
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: TestFileNameConstants$BASELINE_COVERAGE in context of type: com.google.devtools.build.lib.analysis.TargetCompleteEvent
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtIf (CtScanner.java:483)
+    at spoon.support.reflect.code.CtIfImpl.accept (CtIfImpl.java:36)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  04:19 min
+[INFO] Finished at: 2021-04-23T18:20:15+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: TestFileNameConstants$BASELINE_COVERAGE in context of type: com.google.devtools.build.lib.analysis.TargetCompleteEvent -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  08:06 min
+[INFO] Finished at: 2021-04-23T18:28:35+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:13 min
+[INFO] Finished at: 2021-04-23T18:28:55+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: org.apache.flink.connector.jdbc.JdbcTestFixture$SELECT_ALL_BOOKS in context of type: org.apache.flink.connector.jdbc.internal.JdbcFullTest
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtLocalVariable (CtScanner.java:532)
+    at spoon.support.reflect.code.CtLocalVariableImpl.accept (CtLocalVariableImpl.java:51)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:18 min
+[INFO] Finished at: 2021-04-23T18:33:20+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: org.apache.flink.connector.jdbc.JdbcTestFixture$SELECT_ALL_BOOKS in context of type: org.apache.flink.connector.jdbc.internal.JdbcFullTest -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  08:05 min
+[INFO] Finished at: 2021-04-23T18:41:31+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:52 min
+[INFO] Finished at: 2021-04-23T18:42:50+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:20 min
+[INFO] Finished at: 2021-04-23T18:43:14+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:55 min
+[INFO] Finished at: 2021-04-23T18:43:56+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  34.949 s
+[INFO] Finished at: 2021-04-23T18:51:45+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  40.160 s
+[INFO] Finished at: 2021-04-23T18:51:48+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  40.350 s
+[INFO] Finished at: 2021-04-23T18:51:51+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:28 min
+[INFO] Finished at: 2021-04-23T18:52:46+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:05 min
+[INFO] Finished at: 2021-04-23T18:53:11+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: zipkin2.TestObjects$DAY in context of type: zipkin2.storage.ITDependencies
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:29 min
+[INFO] Finished at: 2021-04-23T18:53:45+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: zipkin2.TestObjects$DAY in context of type: zipkin2.storage.ITDependencies -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.728 s
+[INFO] Finished at: 2021-04-23T18:57:54+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by spoon.support.visitor.java.JavaReflectionTreeBuilder (file:/home/andre/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar) to field sun.util.locale.BaseLocale.SEP
+WARNING: Please consider reporting this to the maintainers of spoon.support.visitor.java.JavaReflectionTreeBuilder
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  07:39 min
+[INFO] Finished at: 2021-04-23T19:00:01+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  11.010 s
+[INFO] Finished at: 2021-04-23T19:23:50+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26:54 min
+[INFO] Finished at: 2021-04-23T19:24:49+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:47 min
+[INFO] Finished at: 2021-04-23T19:25:21+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+SLF4J:S FLaF4iJl:e dF ailteod  lotaod  localda sclsas "so rg".osrlgf.4sjl.fim4pjl..iStmaptli.cSLtoagtgiecrLBoigngdeerBri"n.
+SLF4J: dDeerf"a.ul
+tiSnLgF 4tJo:  nDoe-foapuelrtaitng tioo nn o-(oNpOePr)a tlioogng e(rN OiPm)p lleomgegnetart iiomnp
+lemSeLnFt4aJti:o nS
+eeS LhFt4tJ:p :S/e/ew whwt.tspl:f/4/jwww.s.lof4j.orrg/cogdes./hctomdl#Stes.ahtmtli#cSLtoagtgiecrLBoigngdeerrB ifnodre rf urthfeorr d eftuarilthse.r
+ details.
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  14.220 s
+[INFO] Finished at: 2021-04-23T19:25:37+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  13.497 s
+[INFO] Finished at: 2021-04-23T19:25:38+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:30 min
+[INFO] Finished at: 2021-04-23T19:26:08+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:04 min
+[INFO] Finished at: 2021-04-23T19:27:32+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:49 min
+[INFO] Finished at: 2021-04-23T19:27:39+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  05:16 min
+[INFO] Finished at: 2021-04-23T19:30:47+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.RuntimeException: Invalid package name scala.collection.immutable.Map$
+    at spoon.reflect.factory.PackageFactory.get (PackageFactory.java:159)
+    at spoon.reflect.factory.TypeFactory.get (TypeFactory.java:432)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getTypeDeclaration (CtTypeReferenceImpl.java:198)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.canAccess (CtTypeReferenceImpl.java:583)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:704)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:503)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtLocalVariable (CtScanner.java:532)
+    at spoon.support.reflect.code.CtLocalVariableImpl.accept (CtLocalVariableImpl.java:51)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  17:18 min
+[INFO] Finished at: 2021-04-23T19:46:13+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Invalid package name scala.collection.immutable.Map$ -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:14 min
+[INFO] Finished at: 2021-04-23T19:47:30+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: CacheQuota$NO_CACHE_CONSTRAINTS in context of type: com.facebook.presto.cache.filemerge.TestFileMergeCacheManager
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtCase (CtScanner.java:316)
+    at spoon.support.reflect.code.CtCaseImpl.accept (CtCaseImpl.java:44)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtSwitch (CtScanner.java:702)
+    at spoon.support.reflect.code.CtSwitchImpl.accept (CtSwitchImpl.java:36)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  03:38 min
+[INFO] Finished at: 2021-04-23T19:50:25+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: CacheQuota$NO_CACHE_CONSTRAINTS in context of type: com.facebook.presto.cache.filemerge.TestFileMergeCacheManager -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  15.953 s
+[INFO] Finished at: 2021-04-23T19:50:45+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  25.991 s
+[INFO] Finished at: 2021-04-23T19:50:54+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  30.982 s
+[INFO] Finished at: 2021-04-23T19:51:02+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:08 min
+[INFO] Finished at: 2021-04-23T19:56:30+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Not allowed javaletter or keyword in identifier found. See JLS for correct identifier. Identifier: this
+    at spoon.support.reflect.reference.CtReferenceImpl.checkIdentiferForJLSCorrectness (CtReferenceImpl.java:108)
+    at spoon.support.reflect.reference.CtReferenceImpl.setSimpleName (CtReferenceImpl.java:52)
+    at spoon.reflect.factory.TypeFactory.createReference (TypeFactory.java:405)
+    at spoon.reflect.factory.TypeFactory.createReference (TypeFactory.java:399)
+    at spoon.support.compiler.jdt.JDTTreeBuilderHelper.createTypeAccessNoClasspath (JDTTreeBuilderHelper.java:599)
+    at spoon.support.compiler.jdt.ReferenceBuilder.getExecutableReference (ReferenceBuilder.java:484)
+    at spoon.support.compiler.jdt.JDTTreeBuilder.visit (JDTTreeBuilder.java:1386)
+    at org.eclipse.jdt.internal.compiler.ast.MessageSend.traverse (MessageSend.java:1160)
+    at org.eclipse.jdt.internal.compiler.ast.LocalDeclaration.traverse (LocalDeclaration.java:484)
+    at org.eclipse.jdt.internal.compiler.ast.Block.traverse (Block.java:154)
+    at org.eclipse.jdt.internal.compiler.ast.IfStatement.traverse (IfStatement.java:317)
+    at org.eclipse.jdt.internal.compiler.ast.MethodDeclaration.traverse (MethodDeclaration.java:411)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1821)
+    at org.eclipse.jdt.internal.compiler.ast.TypeDeclaration.traverse (TypeDeclaration.java:1673)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:822)
+    at org.eclipse.jdt.internal.compiler.ast.CompilationUnitDeclaration.traverse (CompilationUnitDeclaration.java:783)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.traverseUnitDeclaration (JDTBasedSpoonCompiler.java:480)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.lambda$buildModel$0 (JDTBasedSpoonCompiler.java:437)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.forEachCompilationUnit (JDTBasedSpoonCompiler.java:464)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildModel (JDTBasedSpoonCompiler.java:435)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildUnitsAndModel (JDTBasedSpoonCompiler.java:372)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.buildSources (JDTBasedSpoonCompiler.java:335)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:116)
+    at spoon.support.compiler.jdt.JDTBasedSpoonCompiler.build (JDTBasedSpoonCompiler.java:99)
+    at spoon.Launcher.buildModel (Launcher.java:772)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:216)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:20 min
+[INFO] Finished at: 2021-04-23T19:56:44+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Not allowed javaletter or keyword in identifier found. See JLS for correct identifier. Identifier: this -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by spoon.support.visitor.java.JavaReflectionTreeBuilder (file:/home/andre/.m2/repository/fr/inria/gforge/spoon/spoon-core/9.0.0/spoon-core-9.0.0.jar) to field com.sun.tools.javac.code.Symbol$OperatorSymbol$AccessCode.numberOfAccessCodes
+WARNING: Please consider reporting this to the maintainers of spoon.support.visitor.java.JavaReflectionTreeBuilder
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  06:55 min
+[INFO] Finished at: 2021-04-23T19:57:29+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+spoon.SpoonException: Cannot compute access path to type: org.apache.hadoop.hdfs.DFSConfigKeys$DFS_BLOCK_REPLICATOR_CLASSNAME_KEY in context of type: org.apache.hadoop.hdfs.server.namenode.TestRefreshBlockPlacementPolicy
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.getAccessType (CtTypeReferenceImpl.java:722)
+    at spoon.reflect.visitor.ImportAnalyzer$ScannerListener.enter (ImportAnalyzer.java:136)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:124)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeReference (CtScanner.java:790)
+    at spoon.support.reflect.reference.CtTypeReferenceImpl.accept (CtTypeReferenceImpl.java:75)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtTypeAccess (CtScanner.java:802)
+    at spoon.support.reflect.code.CtTypeAccessImpl.accept (CtTypeAccessImpl.java:28)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtInvocation (CtScanner.java:505)
+    at spoon.support.reflect.code.CtInvocationImpl.accept (CtInvocationImpl.java:46)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:83)
+    at spoon.reflect.visitor.CtScanner.visitCtBlock (CtScanner.java:300)
+    at spoon.support.reflect.code.CtBlockImpl.accept (CtBlockImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.CtScanner.scan (CtScanner.java:170)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:106)
+    at spoon.reflect.visitor.CtScanner.visitCtMethod (CtScanner.java:566)
+    at spoon.support.reflect.declaration.CtMethodImpl.accept (CtMethodImpl.java:58)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.doScan (EarlyTerminatingScanner.java:145)
+    at spoon.reflect.visitor.EarlyTerminatingScanner.scan (EarlyTerminatingScanner.java:127)
+    at spoon.reflect.visitor.ImportAnalyzer.process (ImportAnalyzer.java:49)
+    at spoon.reflect.visitor.ForceImportProcessor.process (ForceImportProcessor.java:23)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.applyPreProcessors (DefaultJavaPrettyPrinter.java:2010)
+    at spoon.reflect.visitor.DefaultJavaPrettyPrinter.prettyprint (DefaultJavaPrettyPrinter.java:370)
+    at spoon.support.reflect.declaration.CtElementImpl.prettyprint (CtElementImpl.java:287)
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:265)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  35:10 min
+[INFO] Finished at: 2021-04-23T20:32:04+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. Cannot compute access path to type: org.apache.hadoop.hdfs.DFSConfigKeys$DFS_BLOCK_REPLICATOR_CLASSNAME_KEY in context of type: org.apache.hadoop.hdfs.server.namenode.TestRefreshBlockPlacementPolicy -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+[INFO] Scanning for projects...
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  23.161 s
+[INFO] Finished at: 2021-04-23T20:32:31+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  19.812 s
+[INFO] Finished at: 2021-04-23T20:32:35+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  28.649 s
+[INFO] Finished at: 2021-04-23T20:32:39+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  58.542 s
+[INFO] Finished at: 2021-04-23T20:33:11+01:00
+[INFO] ------------------------------------------------------------------------
+[WARNING] 
+java.lang.NullPointerException
+    at se.kth.dd2476.RepoDecoder.indexMethod (RepoDecoder.java:232)
+    at se.kth.dd2476.RepoDecoder.indexFile (RepoDecoder.java:223)
+    at se.kth.dd2476.RepoDecoder.main (RepoDecoder.java:199)
+    at org.codehaus.mojo.exec.ExecJavaMojo$1.run (ExecJavaMojo.java:254)
+    at java.lang.Thread.run (Thread.java:834)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:24 min
+[INFO] Finished at: 2021-04-23T20:34:43+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.codehaus.mojo:exec-maven-plugin:3.0.0:java (default-cli) on project indexer: An exception occured while executing the Java class. null: NullPointerException -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -----------------------< se.kht.dd2476:indexer >------------------------
+[INFO] Building indexer 1.0-SNAPSHOT
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec-maven-plugin:3.0.0:java (default-cli) @ indexer ---
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  26.729 s
+[INFO] Finished at: 2021-04-23T20:35:13+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  02:28 min
+[INFO] Finished at: 2021-04-23T20:37:19+01:00
+[INFO] ------------------------------------------------------------------------
