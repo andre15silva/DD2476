@@ -61,6 +61,7 @@ function elasticSearchRequest(resource, method = 'GET', body = null) {
 
 function App() {
     const [data, setData] = React.useState({
+        count: 0,
         methods: [],
         expanded: [],
         queryTime: 0,
@@ -98,6 +99,7 @@ function App() {
             });
 
             setData({
+                count: result.hits.total.value,
                 methods: methods,
                 expanded: expanded,
                 queryTime:result.took,
@@ -106,6 +108,7 @@ function App() {
         }, (error) => {
             console.log(error);
             setData({
+                count: 0,
                 methods: [],
                 expanded: [],
                 queryTime: 0,

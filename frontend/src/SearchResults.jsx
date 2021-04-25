@@ -45,7 +45,7 @@ function SearchResults({data, rowClick}) {
 
   return (
     <div>
-        <Typography color={"textSecondary"} className={classes.queryTime}>{data.methods.length} results in {data.queryTime} ms</Typography>
+        <Typography color={"textSecondary"} className={classes.queryTime}>Showing {data.methods.length} results out of {data.count} in {data.queryTime} ms</Typography>
         <Paper className={classes.root}>
           {data.methods.length === 0 ? (
               <Typography className={classes.noResultsFound}>No results found</Typography>
