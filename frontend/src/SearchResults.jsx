@@ -27,6 +27,16 @@ const useStyles = makeStyles({
   queryTime: {
     textAlign: 'left',
     marginBottom: 5,
+  },
+  codeBlock: {
+    backgroundColor: "#ededed",
+    paddingLeft:8,
+    paddingRight:8,
+    paddingTop: 1,
+    paddingBottom: 1,
+    marginLeft: 0,
+    marginRight: 0,
+    borderRadius: 5,
   }
 });
 
@@ -78,6 +88,12 @@ function SearchResults({data, rowClick}) {
                                   <p>File: <a rel="noreferrer" target="_blank" href={method.fileUrl}>{method.file}</a></p>
                                   <p>Line number: <a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>{method.lineNumber}</a></p>
                                   <p><a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>Go to code</a></p>
+                                  <div className={classes.codeBlock}>
+                                     <pre>
+                                       <code>{method.preview}</code>
+                                     </pre>
+                                    <p><a rel="noreferrer" target="_blank" href={method.fileUrl + "#L" + method.lineNumber}>View more on GitHub...</a></p>
+                                  </div>
                                 </div>
                             )}
                           </TableCell>

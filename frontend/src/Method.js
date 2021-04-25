@@ -15,6 +15,7 @@ export default class Method {
     this.thrown = [];
     this.annotations = [];
     this.className = null;
+    this.preview = null;
   }
 
   fromJson(json) {
@@ -30,6 +31,7 @@ export default class Method {
     this.thrown = json.thrown;
     this.annotations = json.annotations;
     this.className = json.className;
+    this.preview = json.preview.split('\n').map((line, index) => `${index + 1} ${line}`).join('\n');
 
     if ("arguments" in json) {
       this.arguments = [];
