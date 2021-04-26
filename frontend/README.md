@@ -3,10 +3,16 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
+To run the script you will need [npm](https://www.npmjs.com/get-npm) installed.
+Move to the frontend directory, start off with:
+```bash
+npm install
+```
+Then, start the frontend with
+```bash
+npm start
+```
+It will take a few seconds to start.
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.

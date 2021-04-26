@@ -2,6 +2,9 @@
 This repository is a part of our master's course in Search Engines and Information Retrieval.
 The search engine uses Elastic Search to index GitHub and allow users to look for algorithms or specific methods (Java only)
 
+# Run the engine
+First, follow the instructions on the README inside infra folder to run the elastic search engine with the latest data. Then, follow the instruction on the README inside the frontend directory.
+
 # Run instructions
 ## Scanner
 The below assumes that the maven project is first compiled with `mvn install`.  

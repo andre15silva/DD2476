@@ -1,9 +1,13 @@
 # How to get everything working with docker
 
 You will need to install `docker` and `docker-compose`. Search for the instructions to install them in your OS.
+Install elasticsearch docker with  docker pull docker.elastic.co/elasticsearch/elasticsearch:7.12.0
+Download the latest snapshot of elasticsearch from [GitHub](https://github.com/andre15silva/DD2476/releases).
+
 
 ## Init the container
-
+Extract the content of the elasticfile into the infra directory.
+Then:
 ```sh
 cd infra/
 docker-compose up
