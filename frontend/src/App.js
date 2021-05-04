@@ -86,6 +86,7 @@ function App() {
             },
             "from" : 0,
             "size" : 100,
+            "track_total_hits": true,
             }
         ).then((result) => {
             setHasSearched(true);
@@ -98,6 +99,7 @@ function App() {
                 methods.push(method);
             });
 
+            console.log(result);
             setData({
                 count: result.hits.total.value,
                 methods: methods,
