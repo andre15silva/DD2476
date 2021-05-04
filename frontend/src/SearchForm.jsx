@@ -38,50 +38,61 @@ function SearchForm({searchFunc}) {
 
   const [searchInputValue, setSearchInputValue] = React.useState('');
 
+  const escapeQueryString = query => {
+    let escapedQuery = "";
+    for (let i = 0; i < query.length; i++) {
+      const c = query.charAt(i);
+      if ( c === '[' || c === ']') {
+        escapedQuery += '\\';
+      }
+      escapedQuery += c;
+    }
+    return escapedQuery;
+  };
 
   const onFormSubmit = e => {
     e.preventDefault();
 
     let query;
     if (advancedSearch) {
-      query = searchInputValue;
+      query = escapeQueryString(searchInputValue);
     } else {
       let queryParts = [];
       if (nameInputValue.length > 0) {
-        queryParts.push("name:(" + nameInputValue + ")");
+        queryParts.push("name:(" + escapeQueryString(nameInputValue) + ")");
       }
       if (returnTypeInputValue.length > 0) {
-        queryParts.push("returnType:(" + returnTypeInputValue + ")");
+        queryParts.push("returnType:(" + escapeQueryString(returnTypeInputValue) + ")");
       }
       if (repositoryInputValue.length > 0) {
-        queryParts.push("repository:(" + repositoryInputValue + ")");
+        queryParts.push("repository:(" + escapeQueryString(repositoryInputValue) + ")");
       }
       if (fileInputValue.length > 0) {
-        queryParts.push("file:(" + fileInputValue + ")");
+        queryParts.push("file:(" + escapeQueryString(fileInputValue) + ")");
       }
       if (visibilityInputValue.length > 0) {
-        queryParts.push("visibility:(" + visibilityInputValue + ")");
+        queryParts.push("visibility:(" + escapeQueryString(visibilityInputValue) + ")");
       }
       if (javaDocInputValue.length > 0) {
-        queryParts.push("javaDoc:(" + javaDocInputValue + ")");
+        queryParts.push("javaDoc:(" + escapeQueryString(javaDocInputValue) + ")");
       }
       if (modifiersInputValue.length > 0) {
-        queryParts.push("modifiers:(" + modifiersInputValue + ")");
+        queryParts.push("modifiers:(" + escapeQueryString(modifiersInputValue) + ")");
       }
       if (thrownInputValue.length > 0) {
-        queryParts.push("thrown:(" + thrownInputValue + ")");
+        queryParts.push("thrown:(" + escapeQueryString(thrownInputValue) + ")");
       }
       if (annotationsInputValue.length > 0) {
-        queryParts.push("annotations:(" + annotationsInputValue + ")");
+        queryParts.push("annotations:(" + escapeQueryString(annotationsInputValue) + ")");
       }
       if (classNameInputValue.length > 0) {
-        queryParts.push("className:(" + classNameInputValue + ")");
+        queryParts.push("className:(" + escapeQueryString(classNameInputValue) + ")");
       }
       if (argumentNameInputValue.length > 0) {
-        queryParts.push("arguments.name:(" + argumentNameInputValue + ")");
+        queryParts.push("arguments.name:(" + escapeQueryString(argumentNameInputValue) + ")");
       }
       if (argumentTypeInputValue.length > 0) {
-        queryParts.push("arguments.type:(" + argumentTypeInputValue + ")");
+        queryParts.push("arguments.type:(" + escapeQueryString(argumentTypeInputValue) + ")");
       }
       query = queryParts.join(' AND ');
       setSearchInputValue(query);
