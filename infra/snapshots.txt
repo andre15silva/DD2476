@@ -1,0 +1,338 @@
+Cleaning index...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100    28  100    28    0     0    509      0 --:--:-- --:--:-- --:--:--   518
+{ "acknowledged" : true }
+Index clean
+Installing indexer...
+Intalled indexer
+Launching index...
+Lanched indexer with pid 94407
+Launching record count script...
+Launched record count script with pid 94408
+Launching snapshot script...
+Launched snapshot script with pid 94409
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   608  100   608    0     0   6204      0 --:--:-- --:--:-- --:--:--  6204
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619177606",
+    "uuid" : "LSe-cxp3RLmQu_yT7eFBWg",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [ ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T11:33:26.406Z",
+    "start_time_in_millis" : 1619177606406,
+    "end_time" : "2021-04-23T11:33:26.406Z",
+    "end_time_in_millis" : 1619177606406,
+    "duration_in_millis" : 0,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 0,
+      "failed" : 0,
+      "successful" : 0
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   628  100   628    0     0    398      0  0:00:01  0:00:01 --:--:--   398
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619181206",
+    "uuid" : "hR2NrRF1QKCvnKtSxXBWrg",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T12:33:26.545Z",
+    "start_time_in_millis" : 1619181206545,
+    "end_time" : "2021-04-23T12:33:27.945Z",
+    "end_time_in_millis" : 1619181207945,
+    "duration_in_millis" : 1400,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   628  100   628    0     0    458      0  0:00:01  0:00:01 --:--:--   458
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619184808",
+    "uuid" : "rVInk5mfRoKkOBSNmzyuCg",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T13:33:28.041Z",
+    "start_time_in_millis" : 1619184808041,
+    "end_time" : "2021-04-23T13:33:29.442Z",
+    "end_time_in_millis" : 1619184809442,
+    "duration_in_millis" : 1401,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   627  100   627    0     0    645      0 --:--:-- --:--:-- --:--:--   645
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619188409",
+    "uuid" : "ueEfcW9pScuXGIh_r0yuSA",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T14:33:29.464Z",
+    "start_time_in_millis" : 1619188409464,
+    "end_time" : "2021-04-23T14:33:30.264Z",
+    "end_time_in_millis" : 1619188410264,
+    "duration_in_millis" : 800,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   627  100   627    0     0    817      0 --:--:-- --:--:-- --:--:--   816
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619192010",
+    "uuid" : "FkJbiG9tStmd5QoxDiEusA",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T15:33:30.436Z",
+    "start_time_in_millis" : 1619192010436,
+    "end_time" : "2021-04-23T15:33:31.037Z",
+    "end_time_in_millis" : 1619192011037,
+    "duration_in_millis" : 601,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   627  100   627    0     0    957      0 --:--:-- --:--:-- --:--:--   957
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619195611",
+    "uuid" : "RoIuah0SQ5OosGqbl05BOg",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T16:33:31.273Z",
+    "start_time_in_millis" : 1619195611273,
+    "end_time" : "2021-04-23T16:33:31.873Z",
+    "end_time_in_millis" : 1619195611873,
+    "duration_in_millis" : 600,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   628  100   628    0     0    306      0  0:00:02  0:00:02 --:--:--   306
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619199211",
+    "uuid" : "43oKuKPRTVSyUi1LnxisCw",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T17:33:31.852Z",
+    "start_time_in_millis" : 1619199211852,
+    "end_time" : "2021-04-23T17:33:33.854Z",
+    "end_time_in_millis" : 1619199213854,
+    "duration_in_millis" : 2002,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   628  100   628    0     0    205      0  0:00:03  0:00:03 --:--:--   205
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619202814",
+    "uuid" : "u2TGAderQ_WZ9TgqI8vo5A",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T18:33:33.941Z",
+    "start_time_in_millis" : 1619202813941,
+    "end_time" : "2021-04-23T18:33:36.943Z",
+    "end_time_in_millis" : 1619202816943,
+    "duration_in_millis" : 3002,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   628  100   628    0     0    326      0  0:00:01  0:00:01 --:--:--   326
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619206417",
+    "uuid" : "vpPcIcCMQ2e8_1V14ckYIg",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T19:33:37.119Z",
+    "start_time_in_millis" : 1619206417119,
+    "end_time" : "2021-04-23T19:33:38.920Z",
+    "end_time_in_millis" : 1619206418920,
+    "duration_in_millis" : 1801,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   627  100   627    0     0   2200      0 --:--:-- --:--:-- --:--:--  2200
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619210019",
+    "uuid" : "mtMH-W2CQAClY0Vcidz_-g",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T20:33:39.035Z",
+    "start_time_in_millis" : 1619210019035,
+    "end_time" : "2021-04-23T20:33:39.235Z",
+    "end_time_in_millis" : 1619210019235,
+    "duration_in_millis" : 200,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+^CKilled them all, exiting...
+
+~/Repos/DD2476/infra master* 9h 13m
+❯
+~/Repos/DD2476/infra master* 9h 13m
+❯ ./create_snapshots.sh
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   625  100   625    0     0   5681      0 --:--:-- --:--:-- --:--:--  5681
+Created snapshot {
+  "snapshot" : {
+    "snapshot" : "snapshot_1619210797",
+    "uuid" : "KNFq2hyBRDqAL_sxalpMSw",
+    "version_id" : 7120099,
+    "version" : "7.12.0",
+    "indices" : [
+      "code"
+    ],
+    "data_streams" : [ ],
+    "include_global_state" : true,
+    "state" : "SUCCESS",
+    "start_time" : "2021-04-23T20:46:37.578Z",
+    "start_time_in_millis" : 1619210797578,
+    "end_time" : "2021-04-23T20:46:37.578Z",
+    "end_time_in_millis" : 1619210797578,
+    "duration_in_millis" : 0,
+    "failures" : [ ],
+    "shards" : {
+      "total" : 1,
+      "failed" : 0,
+      "successful" : 1
+    },
+    "feature_states" : [ ]
+  }
+}
+^C⏎                                                                                                       
