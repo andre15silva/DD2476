@@ -45,6 +45,10 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
+## Elastic search integration
+To allow use of Elastic Search from the browser Elastic Search must be started with the following command line arguments:  
+` elasticsearch -E http.cors.enabled=true -E http.cors.allow-origin="*" -E http.cors.allow-methods='OPTIONS, HEAD, GET, POST, PUT, DELETE' -E http.cors.allow-headers='X-Requested-With,X-Auth-Token,Content-Type,Content-Length' -E http.cors.allow-credentials=true`
+
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).

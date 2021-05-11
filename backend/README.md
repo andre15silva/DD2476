@@ -8,10 +8,10 @@ Download the latest snapshot of elasticsearch from [GitHub](https://github.com/a
 
 
 ## Init the container
-Extract the content of the elasticfile into the infra directory.
+Extract the content of the elasticfile into the backend directory.
 Then:
 ```sh
-cd infra/
+cd backend/
 docker-compose up
 ```
 
@@ -20,7 +20,7 @@ After the container is running, press `Ctrl+C` to stop it.
 ## Copy data to the container
 
 ```sh
-docker cp /home/andre/Repos/DD2476/infra/elasticsearch/ elasticsearch:/usr/share/
+docker cp <project_path>/backend/elasticsearch/ elasticsearch:/usr/share/
 ```
 
 NOTE: Replace the source path accordingly.

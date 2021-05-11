@@ -3,64 +3,58 @@ This repository is a part of our master's course in Search Engines and Informati
 The search engine uses Elastic Search to index GitHub and allow users to look for algorithms or specific methods (Java only)
 
 # Run the engine
-First, follow the instructions on the README inside infra folder to run the elastic search engine with the latest data. Then, follow the instruction on the README inside the frontend directory.
+The engine is made up of two parts, the first one is the backend which is handled by elastic and the frontend which provides a web interface.
 
-# Run instructions
-## Scanner
-The below assumes that the maven project is first compiled with `mvn install`.  
-It is also assumed that a file tokenlist.txt exists with one GitLab API token per line. API tokens for GitHub can be created at [https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token)
+## Back-end
+To allow for an easier installion of the backend we relied on docker.
+### Pre-requisites
+Install both `docker` and `docker-compose`.
 
-From within the indexer/ directory run:  
-`python3 ../scanner/main.py --indexer "mvn exec:java -Dexec.args=\"../tokenlist.txt\"" --limit 100 --token-list ../tokenlist.txt`
+Download the latest snapshot of our elasticsearch data from [GitHub](https://github.com/andre15silva/DD2476/releases).
 
+Pull elasticsearch docker image with `docker pull elasticsearch:7.12.0`. Make sure your `docker` deamon is running.
 
-## Frontend
-From within the frontend/ directory run `npm install` to install the app and `npm start` to start the frontend server.
-
-To allow use of Elastic Search from the browser Elastic Search must be started with the following command line arguments:  
-` elasticsearch -E http.cors.enabled=true -E http.cors.allow-origin="*" -E http.cors.allow-methods='OPTIONS, HEAD, GET, POST, PUT, DELETE' -E http.cors.allow-headers='X-Requested-With,X-Auth-Token,Content-Type,Content-Length' -E http.cors.allow-credentials=true`
-
-# TODOs
-1. Obtain a lot of Java files from Github (using Github API) (https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api)
--We will give a list of URL (the parse will be in charge of downloading the file).
-1. parse the files
-    1. Which information do we want to get from each file?
-        1. URL document
-        1. Line of the code
-        1. Method name
-        1. Return type
-        1. Modifiers
-        1. Type arguments
-        1. Comment of the function
-        1. Javadocs
-    1. How are we going to do the parse? Spoon?
-1. JSON and POST it to Elastic Search
-1. Create frontend
-1. When the user does a search:
-    1. Do a GET to elastic search with the needed filter
-    1. Show the link in the specified line -> This could be improved
-        1. Basically you just need to add link#L43 (being 43 the line of code where the function is).
-1. Ranking 
-
-## Suggested ElasticSearch index schema
+### Installation
+Extract the content of the elasticsearch data into the backend directory.
+Start a shell in the project directory and:
+```sh
+cd backend/
+docker-compose up
 ```
-{
-repository: "CyC2018/CS-Notes",
-            fileUrl: "https://github.com/CyC2018/CS-Notes/blob/master/.gitignore",
-            returnType: "int",
-            name: "testFunc",
-            file: ".gitignore",
-            lineNumber: 2,
-            arguments: [
-                {
-                    type: "bool",
-                    name: "opt1",
-                },
-                {
-                    type: "String",
-                    name: "strval1"
-                }
-            ]
-}
+After the container is running, press `Ctrl+C` and stop it.
 
+Copy the data to the container:
+```sh
+docker cp ./backend/elasticsearch/ elasticsearch:/usr/share/
+```
+Run the container again:
+```sh
+docker-compose up
+```
+Now, everything should be working with the latest version of the data.
+## Front-end
+The frontend has been developed using React. For this reason [npm](https://www.npmjs.com/get-npm) is required to run the front-end.
+Now, from the frontend directory, install the project:
+```bash
+npm install
+```
+Then, start the frontend with:
+```bash
+npm start
+```
+It will take a few seconds to start.
+The web interface can be access from any web browser at [http://localhost:3000](http://localhost:3000)
+
+# Run the Scanner and Indexer
+The scanner and the indexer are the components responsible for retrieving and indexing GitHub repository files. The latter relies on the former to run as it expects from standard input the links to each file.
+In order to correctly run the scanner, the java code from the Indexer needs first to be compiled. In order to do so the following command can be used:
+```sh
+cd ./indexer
+mvn install
+```
+Furthermore, to retrieve the repository information, the scanner needs access to a GitHub API token. API tokens for GitHub can be created at [Creating a personal access token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token).
+Let `tokenlist.txt` be the file in which one or more tokens are stored, then the scanner can be run with the following commands:
+```sh
+cd ./indexer
+python3 ../scanner/main.py --indexer "mvn exec:java -Dexec.args=\"../tokenlist.txt\"" --limit 100 --token-list ../tokenlist.txt
 ```
